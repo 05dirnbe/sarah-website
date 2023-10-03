@@ -1,0 +1,16 @@
+    <ul>
+    {% set nav = [
+        { title: 'Home', url: '/' },
+        { title: 'Categories', url: '/categories' },
+        { title: 'Skills', url: '/skills/' },
+        { title: 'Testimonials', url: '/testimonials' },
+        { title: 'Resources', url: '/resources' },
+        { title: 'Subscribe', url: '/subscribe' },
+        { title: 'Colophon', url: '/colophon' }
+    ] %}
+    {% for item in nav %}
+        <li>
+            <a href="{{ item.url | url }}" {%- if item.url == page.url | replace(".html", "") %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

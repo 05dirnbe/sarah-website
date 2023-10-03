@@ -1,0 +1,1821 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html). Each change can include things under the following categories:
+
+- Adds
+- Changes
+- Removes
+- Fixes
+
+----------
+
+## [Unreleased]
+
+----------
+
+
+## [6.4.10] - 2023-10-02
+
+- Fixes broken Mastodon link in footer
+- Fixes weird list item spacing
+
+
+## [6.4.9] - 2023-09-15
+
+### Changes
+- Updates readme.md file
+
+
+## [6.4.8] - 2023-09-15
+
+### Fixes
+- Updates npm packages to fix semver vulnerability
+
+
+## [6.4.7] - 2023-08-10
+
+### Changes
+- Changes wording of Mastodon link in footer
+
+
+## [6.4.6] - 2023-08-08
+
+### Adds
+- Adds links to Mastodon
+
+### Removes
+- Removes references to Twitter
+
+
+## [6.4.5] - 2023-07-20
+
+### Fixes
+- Removes `box-shadow` in favour of `outline` for table outlines
+
+
+## [6.4.4] - 2023-07-20
+
+### Fixes
+- Stops honeypot form field taking keyboard focus
+
+
+## [6.4.3] - 2023-07-10
+
+### Changes
+- Generates fonts through Eleventy rather than npm scripts
+
+
+## [6.4.2] - 2023-07-05
+
+### Changes
+- Updates to Node 18.16.1
+
+
+## [6.4.1] - 2023-07-05
+
+### Removes
+- Removes focus style on main element
+
+
+## [6.4.0] - 2023-07-04
+
+### Changes
+- Updates to Eleventy 2.0.1
+
+
+## [6.3.23] - 2023-07-03
+
+### Changes
+- Builds images with Eleventy rather than npm scripts
+
+
+## [6.3.22] - 2023-07-03
+
+## Adds
+- Adds .toml files to editorconfig
+
+
+## [6.3.21] - 2023-07-03
+
+## Adds
+- Redirects www.tempertemper.net/playground to playground.tempertemper.net
+
+
+## [6.3.20] - 2023-04-29
+
+### Changes
+- Adjusts font weight table headers
+- Adjusts adds borders between table header cells
+
+
+## [6.3.19] - 2023-04-22
+
+### Changes
+- Changes font used for `<kbd>` elements to make the text more readable
+
+
+## [6.3.18] - 2023-04-22
+
+### Changes
+- Makes unordered list markers slightly bigger
+
+
+## [6.3.17] - 2023-03-17
+
+### Changes
+- Gives links their own SCSS file
+
+### Fixes
+- Uses `outline` for link focus styling, rather than `box-shadow`
+- Uses `outline` for button focus styling, rather than `box-shadow`
+- Uses `outline` for input focus styling, rather than `box-shadow`
+
+
+## [6.3.16] - 2022-12-30
+
+### Fixes
+- Fixes untidy indentation for nested ordered lists
+
+
+## [6.3.15] - 2022-12-30
+
+### Changes
+- Makes punctuation in code grey
+
+
+## [6.3.14] - 2022-11-17
+
+### Adds
+- Adds mastodon validation link
+
+
+## [6.3.13] - 2022-10-25
+
+### Fixes
+- Updates node and some packages to latest versions
+
+
+## [6.3.12] - 2022-09-02
+
+### Fixes
+- Allows VoiceOver to jump to main content via skip link
+
+
+## [6.3.11] - 2022-08-31
+
+### Changes
+- Enhances styling of links in markdown code blocks
+
+
+## [6.3.10] - 2022-06-25
+
+### Changes
+- Adds support for nested blockquotes
+
+
+## [6.3.9] - 2022-06-24
+
+### Changes
+- Amends the accessible text for the logo, which links to homepage
+
+
+## [6.3.8] - 2022-06-07
+
+### Fixes
+- Fixes large margin of first and last elements in blockquotes
+
+
+## [6.3.7] - 2022-05-11
+
+### Changes
+- Removes margin from blockquotes that contain only a list
+
+
+## [6.3.6] - 2022-04-25
+
+### Changes
+- Updates to Eleventy 1.0.1
+- Updates to node 16.14.2
+- Updates npm packages
+
+
+## [6.3.5] - 2022-02-23
+
+### Adds
+- Adds accessibility statement and link to it in footer
+
+
+## [6.3.4] - 2022-02-23
+
+### Changes
+- Removes hand-style mouse pointer from buttons
+
+
+## [6.3.3] - 2022-02-21
+
+### Removes
+- Changes button link call to action to a link
+- Removes `.button` utility class
+- Removes some link styling from button mixin
+
+
+## [6.3.2] - 2022-02-16
+
+### Fixes
+- Fixes form submission by downgrading node-fetch to version 2
+
+## [6.3.1] - 2022-02-15
+
+### Changes
+- Adds a little more headroom to focused links in paragraph text
+
+### Removes
+- Removes margin and padding from code in links
+
+
+## [6.3.0] - 2022-02-14
+
+### Adds
+- Groups blog posts by year, with a page for each
+
+
+## [6.2.2] - 2022-01-28
+
+### Changes
+- Increases line height for small headings
+- Increases spacing to the left and right of `kbd` elements
+
+
+## [6.2.1] - 2022-01-27
+
+### Adds
+- New 'limit' filter to .eleventyconfig.js to limit the number of looped items output
+- New filter to remove current post from post list output
+- New filter to output related posts first in post lists
+
+
+## [6.2.0] - 2022-01-09
+
+### Changes
+- Updates to Eleventy 1.0
+- Uses `slugify` filter instead of `slug`
+
+### Removes
+- Removes `eleventyConfig.setDataDeepMerge(true)`
+- Removes markdown-it dependency as it's in Eleventy already
+
+### Fixes
+- Fixes case study tag with underline
+- Uses post-in-list template for case studies
+
+
+## [6.1.3] - 2021-12-29
+
+### Changes
+- Refines code in newsletter CTA to prevent repetition
+- Simplifies unnecessarily complicated CTA aria-labelledby code
+
+
+## [6.1.2] - 2021-12-20
+
+### Adds
+- Makes local 404s redirect to proper page
+
+
+## [6.1.1] - 2021-12-09
+
+### Changes
+- Updates node version to 16.13.1
+- Updates Eleventy version to 0.12.1
+- Minor version updates some other packages
+
+
+## [6.1.0] - 2021-11-23
+
+### Adds
+- Differentiates `<kbd>` styling from `<code>`
+- Adds shadow to bottom of buttons
+
+### Changes
+- Moves Button mixin to /admin/ in SCSS structure
+- Reworks padding of buttons
+- Matches input and button line heights
+- Darkens Dark Mode background and reuses primary colour variable in Dark mode
+
+### Removes
+- Removes unused primary light colour variable
+
+
+## [6.0.22] - 2021-11-04
+
+### Removes
+- Removes unnecessary `.canvas` and `.page-wrapper` elements, now that Safari doesn't show background colour on scroll bounce
+- Removes hidden horizontal scroll from page
+- Removes scroll bounce colour for Chrome and Firefox on macOS
+
+
+## [6.0.21] - 2021-10-12
+
+### Changes
+- Simplifies code for details/summary styling
+- Loosens line height on headings slightly
+
+
+## [6.0.20] - 2021-10-09
+
+### Adds
+- Adds Sublime Text project file
+
+### Changes
+- Updates markdown-it-anchor package
+- Uses primary blue for Twitter icon
+- Uses base font size for code
+- Uses default underline thickness
+
+### Fixes
+- Makes logo responsive again
+
+
+## [6.0.19] - 2021-10-07
+
+### Adds
+- New 'darker' primary colour variable
+
+### Changes
+- Renames 'lighter' and 'darker' variable names to 'light' and 'dark'
+
+### Fixes
+- Darkens text links slightly
+
+
+## [6.0.18] - 2021-09-19
+
+### Removes
+- Gets rid of some unnecessary whitespace
+
+
+## [6.0.17] - 2021-09-06
+
+### Fixes
+- Removes unnecessary default focus indicator
+
+
+## [6.0.16] - 2021-09-06
+
+### Fixes
+- Reduces specificity of HTML dark mode Safari link colour fix
+
+
+## [6.0.15] - 2021-09-03
+- Adds Operator Mono to font stack, in case user have it
+
+
+## [6.0.14] - 2021-09-03
+
+### Fixes
+- Changes woff and woff2 fonts to versions with ligatures
+
+
+## [6.0.13] - 2021-08-31
+
+### Adds
+- Adds Nova config folder
+
+
+## [6.0.12] - 2021-08-19
+
+### Removes
+- Removes async script from print stylesheets – browser download them asynchronously anyway
+
+
+## [6.0.11] - 2021-08-07
+
+### Changes
+- Uses a block layout for subscribe forms
+
+### Fixes
+- Makes button text wrap on very small screens
+- Stops outline focus rings appearing
+
+
+## [6.0.10] - 2021-08-06
+
+### Fixes
+- Stops critical sourcemaps breaking on dev reload
+
+
+## [6.0.9] - 2021-08-06
+
+### Changes
+- Updates Sass version to 1.37.5
+- Updates Eleventy syntax highlight plugin to 3.1.2
+- Updates Autoprefixer to 10.3.1
+- Updates Uglify to 3.14.1
+- Updates markdown-it to 12.2.0
+- Updates markdown-it-anchor to 8.1.2
+- Gets Sass sourcemaps working with critical CSS in dev
+
+
+## [6.0.8] - 2021-08-05
+
+### Adds
+- Styles links' active states
+
+
+## [6.0.7] - 2021-08-02
+
+### Fixes
+- Ensures critical CSS generates on change in dev environment
+
+
+## [6.0.6] - 2021-08-01
+
+### Adds
+- New GitHub Action to automatically tag branch on merge to `main`
+
+
+## [6.0.5] - 2021-07-28
+
+### Adds
+- Adds basic details/summary styling
+
+### Changes
+- Abstracts overspill reset to mixin
+
+### Fixes
+- Fixes overspill width issue
+- Prevents hanging list numbers being hidden at certain screen widths
+
+
+## [6.0.4] - 2021-07-14
+
+### Adds
+- Adds more fine grained video controls control for Chromium browsers
+- Adds ELEVENTY_ENV environment variable to global data file
+- Adds development environment specific favicons
+
+### Changes
+- Updates npm version to 16.4.2 via nvm
+- Uses JavaScript for global data file, rather than JSON
+- Renames svg favicon from 'icon' to 'favicon'
+
+
+## [6.0.3] - 2021-07-08
+
+### Removes
+- Removes 'Read more' link from testimonials
+
+### Fixes
+- Uses `<ul>` rather than `<ol>` for featured blog posts
+- Moves post in list styling to critical CSS to stop layout shift
+- Adds index list marker removal to critical CSS to stop flash
+
+
+## [6.0.2] - 2021-07-05
+
+### Changes
+- Makes global JavaScript inline rather than an extra file request
+- Moves page SCSS from /components/ to /base/
+- Moves link mixins to admin/mixins/_general.scss
+- Divides some stylesheets into critical and non-critical
+- Renames styles.css critical.css
+- Renames enhanced.scss non-critical.css
+- Inlines the critical CSS in the documents head
+- Moves HTML5 Shiv to separate stylesheet in conditional comments
+- Removes scripts.js from build folder and adds to .gitignore
+
+### Removes
+- Removes unused responsive nav code
+
+
+## [6.0.1] - 2021-07-04
+
+### Changes
+- Moves more below-the-fold styling to enhanced.css
+- Puts typography mixins in the /admin/ directory
+- Moves code styling out of typography
+
+### Removes
+- Removes unnecessary or overridden CSS reset properties
+- Comments out currently unused styles in CSS reset
+
+
+## [6.0.0] - 2021-07-03
+
+### Adds
+- Adds Bold and Italic FS-Me weights
+- Adds new breakpoint dependent type scale
+- Gives teaser items highlight box on small screens
+- New fonts SCSS stylesheet
+- Creates separate async stylesheet with nice to have styles
+
+### Changes
+- Uses FS-Me instead of Georgia for body text
+- Increases code font size slightly to match x-height of FS-Me
+- Moves Updated date in post details onto a new line
+- Attaches the 'and' to the last category in a list of categories
+- Uses bold font for headings
+- Uses bold font for buttons
+- Uses an italic font for post details
+- Left-aligns whole site and tidies spacing
+- Uses mixin to make pictures, etc. wider than rest of content
+- Makes logo slightly bigger
+- Lightens some code styling CSS
+- Narrows overall site width slightly
+- Limits width of common typography elements
+- Uses CSS Grid instead of Susy
+- Stops code blocks in lists being broader than the list box
+- Uses a percentage unit for `<small>` text resizing, rather than Modular Scale
+- Tidies footer up a bit
+- Simplifies division maths by introducing new border radius variable
+- Moves IE8 and IE9 styles into separate stylesheets to save CSS weight
+- Uses one SCSS stylesheet for IE10 and IE11
+- Uses more generic scripts.js for main JavaScript file
+- Uses plural for styles file
+- Moves code syntax highlighting to nice-to-have stylesheet
+- Moves print styles into own async-loaded stylesheet
+- Uses default browserslist config
+- Uses SVG fill to colour logo underline
+- Moves logo animation inside the SVG itself
+
+### Removes
+- Gets rid of unused `cite` styling
+- Removes Light font weight
+- Removes Susy as a dependency
+- Deletes typography SCSS includes file, using main includes file instead
+- Removes some unused classes from print stylesheet
+- Removes IE stylesheet with IE10 and IE11 specific styles
+- Removes sourcemaps from production CSS
+- Removes unnecessary em and strong styling
+
+### Fixes
+- Makes button links' visited state visible
+- Stops bullets being off-screen at certain screen widths
+- Reduces space at bottom of subscribe form
+- Adds self closing forward slashes consistently in document head
+- Stops autoprefixer adding inline sourcemaps
+
+
+## [5.16.12] - 2021-06-27
+
+### Changes
+- Uses more readable font for table data
+
+
+## [5.16.11] - 2021-06-24
+
+### Adds
+- Adds light and dark mode theme colours
+
+### Changes
+- Uses white underline for PWA/bookmark icons
+
+### Removes
+- Removes the blue stripes at the top and bottom of every page
+
+
+## [5.16.10] - 2021-06-18
+
+### Adds
+- New lighter blue for High Contrast
+
+### Changes
+- Lightens blue on hover in High Contrast Mode
+
+### Removes
+- Removes an unused `reverse-list-marker` mixin
+
+
+## [5.16.9] - 2021-06-14
+
+### Changes
+- Refines `<hr>` styling
+- Uses white for `<hr>` and footer divider colour in dark mode
+
+### Fixes
+- Uses `max-width` for footer divider
+
+
+## [5.16.8] - 2021-06-13
+
+### Changes
+- Adds large default social media image option
+- Adds generic large social media image to select posts
+
+### Fixes
+- Adds image type of `jpg` automatically where the summary image is a JPEG
+
+
+## [5.16.7] - 2021-06-12
+
+### Changes
+- Thickens default link underlines slightly
+
+### Fixes
+- Makes link underlines in `h2`s a normal thickness on Chromium browsers
+- Refines Sass `math` usage
+
+
+## [5.16.6] - 2021-06-04
+
+### Fixes
+- Uses `math.div()` syntax for division in Sass, ready for Dart Sass 2.0.0
+
+
+## [5.16.5] - 2021-06-03
+
+### Adds
+- Adds dark mode meta tags to document head
+- Adds fixes for HTML dark mode for Safari
+
+
+## [5.16.4] - 2021-05-25
+
+### Adds
+- `:focus-visible` enhancement for links
+- `:focus-visible` enhancement for buttons
+- `:focus-visible` enhancement for tables
+
+### Removes
+- Removes button focus combination styles (focus + hover, focus + active)
+- Removes unnecessary text underline styling removal for link-button focus
+
+
+## [5.16.3] - 2021-05-24
+
+### Changes
+- Makes code font colour match surrounding text
+
+### Adds
+- Adds styling for tables
+
+
+## [5.16.2] - 2021-05-13
+
+### Changes
+- Makes brand underscore gif filename more explicit
+
+### Adds
+- Adds AVIF image to about page
+- Adds AVIF images to focus outline post
+- Adds AVIF and WebP images to website evolution post
+- Adds AVIF and WebP images to brand tweak post
+- Adds AVIF and WebP images to brand details post
+- Adds AVIF and WebP images to pixels post
+- Adds AVIF image to animated gif post
+- Adds AVIF and WebP images to case studies
+
+### Removes
+- Removes duplicate jpg from source element on about page
+
+### Fixes
+- Corrects some typos in case study filenames: 'tast' to 'task'
+
+
+## [5.16.1] - 2021-04-21
+
+### Changes
+- Darkens embedded media drop-shadow
+
+
+## [5.16.0] - 2021-04-05
+
+### Adds
+- Creates new main colour variable for consistency with Dark Mode colour palette
+- Adds anti-aliasing to dark mode text
+- Adds high contrast mode
+
+### Changes
+- Uses `colour-` prefix for `$black` colour variable
+- Uses `colour-` prefix for `$white` colour variable
+- Renames `$colour-primary-highlight` to `$colour-highlight`
+
+### Fixes
+- Corrects spelling of 'colour' in dark mode mixin
+- Makes scroll markers in light mode dark again
+- Removes letter spacing in dark mode to fix multi-word link underlines
+- Fixes spacing inconsistency with `@includes`
+
+### Removes
+- Tidies up Dark Mode @includes
+
+
+## [5.15.7] - 2021-04-04
+
+### Changes
+- Link focus only adds outline, no colour changes
+- Renames lightest Light Mode colour variable to be consistent with Dark Mode
+- Lightens Light Mode hightlight colour slightly
+- Uses `colour-primary` for every default state in Light Mode
+- Simplifies `::selection` colours
+- Simplifies hidden page background colour styling
+- All Dark Mode hover states lighten the blue
+
+### Removes
+- Removes unnecessary image link styling
+- Gets rid of AAA primary colour for Light Mode
+- Removes unused `colour-primary-light` colour variable
+
+
+## [5.15.6] - 2021-04-03
+
+### Changes
+- Adds focus outline to links, consistent with form focus styling
+- Adds focus outline to 'skip to main content' link, consistent with other focus styling
+
+
+## [5.15.5] - 2021-03-31
+
+### Changes
+- Stops sign-up form validating on email format, using `inputmode="email"` instead of `type="email"`
+
+### Adds
+- Uses HTML validation to stop sign-up form being triggered with no data
+- Prevents double form submission
+- Adds autocomplete attribute for email on sign-up form
+
+
+## [5.15.4] - 2021-03-29
+
+### Changes
+- Changes inline code colour to blue
+- Gets light mode link code passing AA colour contrast
+- Reduces horizontal padding on form text inputs
+- Makes form input and button focus styling more consistent
+
+### Fixes
+- Matches the outline to the background for focused links in Light Mode
+
+
+## [5.15.3] - 2021-03-26
+
+### Adds
+- Adds async decoding attribute to all images
+- Adds `aria-current` attribute to navigation for current page
+- Adds coloured text to inline code
+- Adds explicit light mode code background colour variable
+- Adds Internet Explorer 11 stylesheet to fix layout issues
+- Adds Internet Explorer 10 specific style sheet
+
+### Changes
+- Flattens form text alignment styling
+- Allows content to be passed into every dark mode mixin
+- Thins dark mode code text out slightly
+- Deepens contrast for dark mode code blocks
+- Separates Internet Explorer stylesheets into versions
+
+### Fixes
+- Moves breakpoint media query out of `full-width` mixin
+- Fixes Internet Explorer 9 targeting
+- Internet Explorer 9 layout fixes
+- Fixes Internet Explorer 8 targeting
+- Internet Explorer 8 layout fixes
+- Fixes logo height on Internet Explorer 9, 10 and 11
+
+### Removes
+- Removes some unnecessary form margin
+- Removes some unnecessary footer margin styling
+- Removes some unnecessary blog post list styling
+- Removes `active` page class from navigation
+- Removes unnecessary dark mode code wrapper media query for code blocks
+
+
+## [5.15.2] - 2021-03-20
+
+### Adds
+- User manual for Martin Underhill
+
+### Changes
+- Updates a few npm packages
+
+### Fixes
+- Updates Eleventy version to fix security vulnerabilities
+
+
+## [5.15.1] - 2021-03-06
+
+### Changes
+- Changes favicon location
+- Adds SVG favicon
+- Makes theme-color value lowercase for better legibility
+- Updates humans.txt file to reflect Gulp removal
+- Updates colophon file to reflect Gulp removal
+- Updates scripting section of colophon
+
+### Adds
+- Adds webmanifest file with icons for Android
+
+### Removes
+- Gets rid of all but one apple-touch-icon
+- Removes Safari mask-icon
+
+
+## [5.15.0] - 2021-03-05
+
+### Changes
+- Uses npm packages and npm scripts to compile site rather than Gulp
+- Uses command line to concatenate JavaScript, rather than npm package
+- Updates readme.md
+
+### Removes
+- Removes Gulp as a dependency
+- Removes empty, unnecessary build.js file
+
+
+## [5.14.1] - 2021-03-04
+
+### Changes
+- Updates to node 15.11.0
+
+
+## [5.14.0] - 2021-02-12
+
+### Changes
+- Uses `aria-labelledby` instead of `aria-label` for sections where appropriate
+- Updates Susy from version 2 to 3
+- Makes Prism.js CSS a bit more efficient
+- Makes `<video>`, `<img>` and YouTube CSS a bit more efficient
+- Renames legacy SCSS folder to 'etc'
+- Uses `---` instead of an em-dash (`—`) so that they're legible in a monospace font
+- Uses `--` instead of an en-dash (`–`) so that they're legible in a monospace font
+
+### Fixes
+- Uses same text testimonial 'read more' visually and programmatically
+- Corrects references to 'back-end' to 'backend'
+- Corrects references to 'front-end' to 'frontend'
+
+### Removes
+- Removes unused contact form CSS
+- Removes unused `textarea` CSS
+- Removes unused Wistia video class
+- Removes 'back' utility class
+
+
+## [5.13.7] - 2021-01-23
+
+### Changes
+- lightens logo underscore
+- Changes 'light' Light Mode colour variable to 'lightest' and introduces new 'light'
+- Uses original brand blue for top and bottom strips
+
+### Fixes
+- Fixes scrollbar colour in Light Mode so that it's dark against the white background instead of white
+
+
+## [5.13.6] - 2021-01-08
+
+### Adds
+- Adds video styling, in line with image styling
+
+
+## [5.13.5] - 2021-01-07
+
+### Changes
+- Adds border to focussed links
+- Uses underline for focussed links
+- Thins `<blockquote>` marker line slightly
+
+
+## [5.13.4] - 2021-01-02
+
+### Changes
+- Restyles `<blockquote>` with italics, a thinner line and hanging line on larger screens
+- increases font size to reduce line length on medium screens
+
+
+## [5.13.3] - 2020-12-12
+
+### Fixes
+- Removes internal absolute URLs
+- Removes a few stray `http://localhost:3000` links
+- Uses `https://` or `//` in links to avoid mixed content warnings
+- Fixes broken external URLs
+- Uses newer github repo URL to prevent redirect
+- Tidies up blue beanie article's link formatting
+- Changes all internal blog URLs that are now resources, to prevent reliance on redirects
+- Removes websites from testimonials which no longer have a website
+
+
+## [5.13.2] - 2020-12-03
+
+### Fixes
+- Stops blinking of logo cursor on OSs that don't have a 'reduce motion' preference
+
+
+## [5.13.1] - 2020-11-29
+
+### Fixes
+- Prevents hanging list markers in blockquotes
+- Removes left and right padding on inline code in links to prevent gaps in underline
+- Updates markdown-it dependencies
+
+
+## [5.13.0] - 2020-11-15
+
+### Changes
+- Makes homepage blog posts 'featured' rather than the most recent two
+- Updates to node version 12.13.1
+- Updates eleventy to 0.11.1
+- Updates eleventy plugins packages
+- Updates Markdown-it packages
+- Updates Browsersync, Del and Version Bump npm packages
+
+### Fixes
+- Tweaks top padding on code in links
+- Matches code in links' colours to rest of link
+- Makes link text black on focus in Dark Mode, passing AA colour contrast
+- Adds title to YouTube embed iframe for improved accessibility
+- Increases colour contrast for selected in Dark Mode
+- Corrects references to Dark Mode to use title case
+- Corrects typos of 'accessibility'
+
+
+## [5.12.2] - 2020-10-08
+
+### Changes
+- Makes form labels the normal text colour rather than blue
+
+
+## [5.12.1] - 2020-10-05
+
+### Removes
+- Removes footer address's ARIA role
+
+
+## [5.12.0] - 2020-09-16
+
+### Adds
+- Skills/services section, covering user experience design, frontend development, accessibility, user interface design, HTML email, and Perch CMS
+
+
+## [5.11.9] - 2020-09-09
+
+### Changes
+- Gives footer address a different role – presentation rather than group
+
+### Removes
+- Removes navigation link dividers
+
+### Fixes
+- Gives navigation links a minimum height to be better touch targets
+- Uses margin to separate navigation items rather than padding
+
+
+## [5.11.8] - 2020-09-09
+
+### Changes
+- Uses lighter background for code in light mode
+
+### Fixes
+- Addresses colour contrast for inline code inside links
+- Tidies focus styling for inline code inside links
+- Fixes colour contrast for syntax highlighted code in both light and dark modes
+
+
+## [5.11.7] - 2020-08-25
+
+### Adds
+- Adds common post-blog post content to json feed
+- Adds humans.txt file
+- New date filter to Eleventy config
+
+### Changes
+- Uses smart filter for apostrophes, etc. in post titles in the common feed content
+- Styles `header`, `navigation`, `main` and `footer` elements rather than their equivalent ARIA roles
+
+### Removes
+- Removes `aria-hidden` attribute where there's already a `hidden` attribute
+- Removes explicit ARIA roles of `banner`, `navigation`, `main` and `contentinfo`
+
+
+## [5.11.6] - 2020-08-08
+
+### Adds
+- Allows webfonts to be used by other servers
+
+
+## [5.11.5] - 2020-08-08
+
+### Adds
+- Adds FS Me Bold webfont
+
+
+## [5.11.4] - 2020-08-03
+
+### Adds
+- Adds unsubscribe page
+- Adds link to unsubscribe page to newsletter signup form
+
+### Fixes
+- Updates browsersync to 2.26.10 to fix security vulnerability
+- Takes trailing slash from newsletter URLs
+
+
+## [5.11.3] - 2020-07-17
+
+### Adds
+- Adds ability to add large social images to any page via front matter
+- Adds large summary images to homepage and about page
+
+
+## [5.11.2] - 2020-07-15
+
+### Removes
+- Stops paragraphs in `<blockquotes>` being inline
+
+
+## [5.11.1] - 2020-06-30
+
+### Adds
+- Allows post/resource/testimonial/case study URL override parameter in front matter
+- Inserts non-breaking space into recent article title to fix problematic wrapping
+
+### Fixes
+- Removes non breaking spaces (which aren't valid) from titles in feeds
+
+
+## [5.11.0] - 2020-06-30
+
+### Adds
+- Adds changes default image styling to accommodate intrinsic aspect ratio
+- Swaps all Markdown image references to HMTL with width and height attributes set
+- Adds lazy loading attribute to after-the-fold images
+
+### Changes
+- Makes About page picture a progressively enhanced WebP
+
+
+## [5.10.5] - 2020-06-28
+
+### Changes
+- Makes contact CTA a bit less corporate sounding
+- Reduces unsubscribe message in newsletter sign up small print
+
+
+## [5.10.4] - 2020-06-27
+
+### Adds
+- Adds 'more case studies' after each case study
+- Adds custom featured image for case studies
+
+### Changes
+- Gives image alt text a background colour if the image fails to load
+- Gives case studies their own page layout
+- Uses contact CTA on case studies
+- Specifies featured image on each case study
+
+
+## [5.10.3] - 2020-06-24
+
+### Changes
+- Changes prism.js colour scheme to Monokai
+
+
+## [5.10.2] - 2020-06-22
+
+### Adds
+- Adds portfolio redirects to netlify.toml
+
+### Fixes
+- Rearranges some redirects that were added to netlify.toml randomly, so they're easier to find
+
+
+## [5.10.1] - 2020-06-21
+
+### Changes
+- Stretches images into left and right gutter
+
+### Fixes
+- Uses calc for left and right margin on videos so that it's a progressive enhancement
+
+
+## [5.10.0] - 2020-06-21
+
+### Adds
+- Adds Netlify function for newsletter subscription via Buttondown's API
+- Adds environment variables and fetch packages
+- Adds .env file for environment variables
+- Tells Netlify to go to 'confirm email' page on newsletter signup
+- Newsletter sign up form to Blog pages
+- Newsletter sign up form as default CTA throughout site
+- Adds new YouTube embed include, using no cookie embed code
+- Styles embedded YouTube videos
+
+### Changes
+- Adds some spacing top and bottom to pre code blocks
+- Reduces main heading (`<h1>`) size slightly
+- Uses 'development' rather than 'dev' in homepage `<h1>`
+- Removes hyphen from references to frontend development
+- Uses same 'contact me' CTA for resources
+- Refactors CTA conditionals
+- Used new YouTube embed for 'Why you need a privacy policy' resource's embedded video
+
+### Removes
+- Removes Campaign Monitor newsletter integration from Resources
+- Removes newsletter unsubscribe page
+
+
+## [5.9.1] - 2020-06-07
+
+### Changes
+- Builds option to use dedicated page description in front matter, rather than sharing the `intro`
+
+### Removes
+- Removes top and bottom margin from images when they're in a `<p>` tags (when added via Markdown)
+
+
+## [5.9.0] - 2020-05-31
+
+### Adds
+- Adds .netlify/ directory to .gitignore
+- New portfolio section
+- Case study on GOV.UK task lists
+
+### Changes
+- Updates Eleventy to version 11.0.0
+- Updates markdown-it-anchor package
+
+
+## [5.8.0] - 2020-05-06
+
+### Adds
+- Defines layouts in order to leave the base layout more manageable
+- Adds `aria-label` attributes to all `<section>` elements
+- Adds [microdata](https://schema.org/BlogPosting) to blog posts and resources
+- New section spacing variable to make distances between elements more uniform
+- Makes links with a role of button actionable with `space` as well as `return`
+- Stops links that look like buttons being draggable with the `draggable="false"` attribute
+
+### Changes
+- Updates version-bump-prompt and markdown-it-anchor packages
+- Makes base layout a wee bit more readable and adds article tags around articles
+- Moves blog post info above article
+- Better sizing and spacing for Apple Watch sized screens
+
+### Removes
+- Removes unnecessary `<div>` surrounding intro paragraph
+- Removes 'back to resources' link after resource posts
+- Removes button focus styling when active to stop messiness on Firefox
+
+### Fixes
+- Default paragraph margin fix
+- Removes bottom margin from buttons
+- Fixes some vulnerabilities in some node dependencies
+
+
+## [5.7.2] - 2020-04-08
+
+### Fixes
+- Increases contrast (brightens up) list markers in dark mode
+
+
+## [5.7.2] - 2020-04-05
+
+### Adds
+- Adds styling for inline `<code>` snippets inside links
+
+
+## [5.7.1] - 2020-04-03
+
+### Adds
+- Styling for `<kbd>` element
+
+
+## [5.7.0] - 2020-01-25
+
+### Adds
+- Adds custom summary image option to blog posts and resources
+- Adds [security.txt file](https://securitytxt.org)
+
+### Fixes
+- Missing alt text for twitter image
+
+
+## [5.6.4] - 2020-01-15
+- Applies some npm package patches
+- Upgrades Eleventy to 0.10.0
+- Upgrades Eleventy Syntax Highlighter to version 3
+- Removes unused Gulp Rename package
+
+
+## [5.6.3] - 2019-12-28
+Updates terms page with more recent details and corrects some grammar.
+
+
+## [5.6.2] - 2019-12-27
+Removes tagging from version bump tasks
+
+
+## [5.6.1] - 2019-12-19
+
+### Removes
+Removes full-stop from 'updated' line at end of updated posts/resources
+
+
+## [5.6.0] - 2019-12-10
+
+### Changes
+Changes all URLs to reference site at `www.` subdomain
+
+### Fixes
+- Removes absolute URLs from blog posts and resources
+- Fixes funky URL in email resource
+
+
+## [5.5.5] - 2019-12-03
+
+### Adds
+- Adds 404 configuration in Browsersync
+- 'More posts' section after each blog post and resource
+
+### Changes
+Updates colophon, adding Netlify
+
+### Fixes
+- Fixes weird issue where twitter icons weren't showing on iOS
+- Fixes weird issue where twitter link in footer wasn't showing on iOS
+
+
+## [5.5.4] - 2019-11-22
+
+### Adds
+Redirects FreeAgent article flagged as 'not found' in Netlify Analytics
+
+### Changes
+- Uses small image Twitter card again
+- Updates Twitter card images with underscore
+- Updates eleventy config with ES6 function syntax
+- New Safari tab icon with colour specified
+- Updates favicon, apple icon and feed icon
+- Updates legacy logo pngs to new rectangle underscore
+- Updates site logo with rectangle underscore
+
+
+## [5.5.3] - 2019-11-16
+
+### Changes
+- Moves bump from gulp to npm
+- Updates Now page
+- Redirects a few 'not found' pages flagged in Netlify Analytics
+
+
+## [5.5.2] - 2019-11-05
+
+### Adds
+Adds 'serverless' and 'git' tags to relevant posts
+
+### Fixes
+- Adds some missing redirects for a couple of resources
+- Adds a redirect for hacky-looking page visits
+
+
+## [5.5.1] - 2019-10-30
+
+### Adds
+- Adds redirects to pick up some 'resources not found' from Netlify analytics
+- Adds missing 'subscribed' page for mailing list
+
+### Fixes
+Changes way homepage feature posts are counted
+
+
+## [5.5.0] - 2019-10-27
+
+### Changes
+- Darkens Dark Mode text highlighting colour slightly
+- Changes Dark Mode highlighted text to black
+
+### Fixes
+Makes focus styles for links, buttons, the logo and the 'skip to content' link much more obvious
+
+### Adds
+Sublime Text project file syntax highlighting
+
+
+## [5.4.1] - 2019-10-21
+
+### Changes
+- Gives blog posts and resources a different meta image for social media sharing than normal pages
+- Uses a png for open graph sharing instead of a jpg
+- Updates Sublime Text project config filename
+- Updates privacy policy, removing bits about cookies
+
+### Adds
+- Adds some more open graph information for images
+- VSCode project config for syntax highlighting
+
+
+## [5.4.0] - 2019-10-16
+
+### Adds
+CV
+
+### Changes
+- Updates repo name in package.json
+- Lightens highlight blue colour
+
+
+## [5.3.2] - 2019-10-12
+
+### Fixes
+Fixes colour contrast on buttons and forms when on box-out panels
+
+### Removes
+- Deletes now-unnecessary nginx config file
+- Takes staging instructions out of readme file as there's no staging for this project
+
+
+## [5.3.1] - 2019-10-09
+
+### Changes
+- Makes all non-production Netlify deploys run the staging build
+- Reorders list of two blog posts on homepage to be reversed
+
+
+## [5.3.0] - 2019-10-07
+
+### Adds
+- Adds robots.txt to repo
+- Adds favicon.ico to repo
+- Adds .nvmrc file
+- Creates a `staging` auto-deployment for Netlify
+
+### Changes
+- Upgrades to [Eleventy 0.9.0](https://github.com/11ty/eleventy/releases/tag/v0.9.0)
+- Uses project specific eleventy version (using [npx](https://www.npmjs.com/package/npx))
+- Updates del, gulp-autoprefixer and markdown-it
+- Updates Now page
+- Puts Blog link first in primary nav
+
+### Fixes
+- Removes outline from heading link focus to fix multi-line overlap issues
+- Adds more redirects for categories to stop some 404s
+- Makes `<small>` text a different style rather than smaller
+- Amends colours in both light and dark mode, including highlight panels, to meet AAA colour contrast
+- Stops silly link underline removal in reset, then subsequent re-addition in the link stylesheet
+
+
+## [5.2.0] - 2019-09-20
+
+### Adds
+- Netlify config file
+- Adds redirects to netlify.toml
+- Puts canonical page link to `<head>`
+
+
+## [5.1.2] - 2019-08-30
+
+### Adds
+New article: 'Practice makes perfect'
+
+
+## [5.1.1] - 2019-08-23
+
+### Adds
+New article: 'How to avoid disabled buttons'
+
+
+## [5.1.0] - 2019-08-21
+
+### Adds
+- New article: 'Amending your last Git commit'
+- New article: 'Changing editor for Git on the command line'
+
+### Changes
+- Adds newest Nginx config
+- Reduces top margin for nested lists
+
+
+## [5.0.15] - 2019-08-11
+
+### Changes
+- Creates lib folder and moves date filter in there
+- Moves all general styling to components
+- Refines print stylesheet a bit
+
+### Removes
+- Removes CSS Comb and Style Lint config files
+- Removes unused search stylesheet
+- Removes redundant IE8 styles
+
+### Fixes
+- Makes 'skip to content' link visible on focus
+- Fixes sublime text project config file
+- Adds sublime text workspace files to gitignore
+- Uses proper URL for git repo in package.json
+- Uses proper fall-back logo for IE8
+- Fixes title HTML character output
+- Fixes page title variables in document head
+- Simplifies navigation markup and styling
+- Adds ARIA labels to distinguish `<nav>` elements
+- Makes footer text normal size
+- Aligns baselines of logo and nav in header
+- Corrects date on new years resolution post
+- Makes `<h1>`s full-width again
+
+
+## [5.0.14] - 2019-08-04
+
+### Adds
+Adds `<h4>`s and their styling back in
+
+
+## [5.0.13] - 2019-08-04
+
+### Adds
+New article: 'Website version 5'
+
+### Changes
+- Reverses blog, resources and testimonials listings, so that the highest number is the one at the top of the list
+
+### Fixes
+- Adds list semantics back on blog listings
+- Uses best practice way to [specify browsers](https://github.com/postcss/autoprefixer#browsers) in Autoprefixer
+
+
+## [5.0.12] - 2019-07-26
+
+### Adds
+- List marker styling
+- Adds post type (article or resource) to the listing detail, next to the date and categories
+- Adds slight drop shadow to images in case their edges match the website background colour
+- Adds 'edit this page on GitHub' link to footer, now that repo is public
+- New article: 'Changing your Git history'
+
+### Changes
+- Amends button hover and active styling to be more sympathetic to links
+- Uses outline for button focus state so that it's more obvious
+- Makes post listings header the link to the article
+- Refines post in list spacing
+- Refactors heading sizes and styles across site
+
+### Removes
+Removes headings below level 3
+
+### Fixes
+Updates markdown-it dependency to fix vulnerability
+
+
+## [5.0.11] - 2019-07-18
+
+### Adds
+New article: 'Right here, right now'
+
+### Updates
+- Fleshes out some category descriptions
+- Updates Now page
+
+### Fixes
+Fixes some capitalisation on homepage
+
+
+## [5.0.10] - 2019-07-17
+
+### Adds
+New article: 'Stop the ride, I want to get off'
+
+
+## [5.0.9] - 2019-07-16
+
+### Adds
+- New article: 'Minimalism and progressive enhancement'
+- Gives some categories a more custom introduction
+
+
+## [5.0.8] - 2019-07-14
+
+### Adds
+New article: 'Refining my writing process'
+
+### Changes
+- Rewords homepage heading and intro, which now references the Now page
+- Reduces spacing between list items
+- Makes CTA alternative action sans-serif
+- Changes URL of blog feeds to be more general, until more granular subscriptions are needed
+
+### Fixes
+Fixes final outstanding non-critical accessibility issues by refactoring `<aside>` and `role="complementary"`, and moving CTAs inside the `<main>` landmark
+
+
+## [5.0.7] - 2019-07-13
+
+### Adds
+- Adds 'Now' page and links to it from the bottom of the 'About' page
+- New article: 'Folder sharing and the new Apple OSs'
+
+### Changes
+- Allows titles to use normally-typed apostrophes and converts them to nice ones on build
+- Uses slug filter for URLs but defines `remove` parameter for special characters like `+` and `'`
+- Adds filter to take a twitter handle and make it into a link to twitter
+- Moves back class to utitlity stylesheet
+- Uses paragraph tags for read more wrapper
+- Uses sans-serif font for 'post details' component
+- Renames Atom feed as rss.xml wasn't right as it's not RSS – it's Atom
+
+### Removes
+- Removes pagination component completely
+- No more link marker for read more
+- Removes link marker styling
+
+### Fixes
+- Puts some Open Graph URLs straight
+- Corrects file name for 'Design and dev should be more joined up' article
+
+
+## [5.0.6] - 2019-07-02
+
+### Adds
+New blog post: 'Design and dev should be more joined up'
+
+### Changes
+- Rewords blog post CTA
+- Moves 'back to posts' link for blog under CTA
+- Uses global data for twitter handle
+
+### Removes
+Stop post in list link sticking to bottom of container
+
+
+## [5.0.5] - 2019-06-30
+
+### Fixes
+- Refreshes all bookmark icon and fixes broken links
+- Makes RSS references in `<head>` absolute
+
+
+## [5.0.4] - 2019-06-30
+
+### Adds
+Generic ‘Follow’ CTAs on all pages except in blog, resource and testimonials sections
+
+### Removes
+Takes 'edit on GitHub' link out of footer
+
+
+## [5.0.3] - 2019-06-27
+
+### Adds
+- Adds '…appeared first on tempertemper.net' to feeds
+- Adds role="img" to SVGs
+
+### Changes
+- Changes RSS feed to Atom
+- Adds company name and email to global data file
+- Uses global data file for contact page email address
+
+### Fixes
+- Formats updated date properly in JSON feed
+- Fixes incorrect tabindex attribute on skip link
+- Indents logo SVG with 4 spaces for consistency with HTML
+- adds more unique ID to logo SVG title
+- Makes Twitter SVG title IDs unique and allows two per page
+- Adds role="group" to address to stop duplicate contentinfo being added implicitly
+
+### Removes
+- Removes full stop from 'Ltd'
+- Removes weird rel attribute from privacy policy link
+
+
+## [5.0.2] - 2019-06-26
+
+### Adds
+New 'Getting to grips with Git' blog post
+
+### Changes
+- Text in blog call to action
+- Button styling
+
+### Removes
+- Work link from testimonials call to action
+- Inner focus from submit buttons in Firefox
+- Gets rid of secondary button style variant
+
+### Fixes
+Twitter icon and text alignment in buttons
+
+
+## [5.0.1] - 2019-06-25
+
+### Adds
+- Proper solution for the notch on iPhone X
+- Stops VAT and company number being picked up as phone numbers on iOS
+
+### Changes
+- Updates Nginx example file with static site config
+- Switches inline nav dividers to after each item as it makes more sense when they wrap onto two lines
+- Uses website specific email address on contact page
+- Updates to modular scale version 3
+
+### Fixes
+- Stops twitter link in footer centre aligning on mobile
+- Fixes separation and grouping of footer nav groups
+- Stops twitter link in footer taking up full width
+
+
+## [5.0.0] - 2019-06-24
+
+### Adds
+- Adds updated flag for updated posts
+- Adds categories section to homepage
+- Adds images and fonts to gulp build
+- New subscribe page with links to RSS, JSON feed, etc.
+- Syntax highlighting for code blocks
+- Adds new Apple category
+- Styles nested bullets
+- Uses markdown filter for post in list description
+- Adds 'edit page on GitHub' link to footer
+
+### Changes
+- Rebuilds website in [Eleventy](https://www.11ty.io) instead of [Perch](https://grabaperch.com)
+- Makes categories site-wide, rather than scoped to blog articles, resources, etc.
+- CSS cache busting using site version number
+- Updates conten pretty much all over site
+- Left-aligns page headings on small screens
+- Reworks headings for smaller screens
+- Left-aligns footer content on small screens
+- Updates to [Gulp](https://gulpjs.com/) version 4
+- Builds, serves and watches site with Gulp and [Browsersync](https://www.browsersync.io/)
+- Restyles inline code
+
+### Removes
+- Removes hamburger menu for mobile devices
+- Removes projects section
+- Removes services section
+- Removes pagination
+- Removes search
+- Removes contact form
+- Gets rid of pattern library for now
+- Removes build directory from repo (site builds in deployment pipeline)
+- Removes some categories to tidy/focus the list
+- Stops hyphenation on medium to large screens
+- Gets rid of blog and article headings as links
+
+### Fixes
+- Fixes misaligned subscription form submit button
+- Sorts slightly broken RSS feed
+- Gives JSON feed a good going over
+- Sorts bottom margin on homepage teaser elements
+- Fixes broken links to woff2 files
+
+## [4.11.2] - 2019-01-25
+
+### Changes
+- Adds `autocomplete="off"` attribute to search form
+- Adds `prefers-reduced-motion` media queries to stop animations when the user has their operating system's 'Reduce motion' setting on
+
+
+## [4.11.1] - 2019-01-04
+
+### Adds
+JSON feed
+
+### Changes
+Moves RSS feed page template
+
+### Fixes
+Gets rid of extra whitespace in blog post listing category links
+
+
+## [4.11.0] - 2018-11-29
+
+### Adds
+- Adds gulp bump for versioning
+- Adds unreleased section to changelog
+- Introduces new white, specific to dark mode
+- Styling for inline and block level code in dark mode
+- New dynamic call to action template
+
+### Changes
+- Updates readme to use npm start
+- Fleshes out package.json file
+- Adds some more extension to 2 space index in editorconfig
+- Sublime text project syntax highlighting overrides
+- Nginx config details for pattern library
+- Updates npm packages
+- Changes dark mode greys slightly
+- Adjusts font spacing in dark mode
+- Adds outline to focussed links
+- Makes read more button stick to bottom of panel in teaser component
+- Makes homepage video embed optional
+- Adds blog teaser to homepage
+- Makes secondary call to action on CTA template editable and optional
+- Makes primary CTA text editable
+- Makes excerpt textareas a little bit bigger
+- Adds published toggle to projects
+- Adds published toggle to services
+
+### Fixes
+- Corrects version number in changelog
+- Fixes top margin on second list item in teaser component
+- Makes inline code legible
+- Stops colour animation on navigation menu icon
+- Makes footer text bigger to pass AA accessibility
+- Sorts messy underline on Twitter link in footer
+- Fixes output of timestamp page template
+- Blog post tag spacing fix
+
+### Removes
+- Takes Perch language files out of the repo once and for all
+- Gets rid of projects and testimonials on homepage
+- Removes unused call to action templates
+
+
+## [4.10.1] - 2018-11-13
+
+## Adds
+- support for Safari dark mode
+- adds skip to main content link for screenreaders
+- adds `visually-hidden` utility class
+- utility classes stylesheet
+
+## Changes
+- better link focus styling using background colour
+- softens black a tiny bit for dyslexic users
+- reduces padding on right side of blockquotes to provide more reading width at mobile
+- tidies up scss variables
+- moves .index-list to utility stylesheet
+- moves pagination styling to components
+- moves ie specific meta data from partial to document head
+- underlines all links except headings
+
+## Fixes
+fixes `code` background when in a `pre`
+
+## Removes
+- removes hyphenation from paragraph text so that words don't break
+- removes visited link styles
+- gets rid of unused fonts partial in head
+
+
+## [4.10.1] - 2018-09-05
+
+### Adds
+Adds blue background colour to website that shows when the page bounces
+
+
+## [4.10.0] - 2018-08-29
+
+### Adds
+- Configures pattern library
+- Adds basic components to library for header, footer and typography
+
+
+## [4.9.1] - 2018-02-21
+
+### Adds
+- Nginx config file for reference
+- Introduces this `.changelog`
+- Updates `.editorconfig`
+- Adds `copy:js` to js Grunt alias
+- Adds `aria-label`s to 'read more' links on index pages for blog, resources, testimonials, services and projects
+
+### Changes
+- Updates js files for document `<head>`
+- Uses php's more up to date array syntax
+- Page templates are now a raw-html-free-zone – php only
+- Brings indentation in line with `.editorconfig`
+- Uses one head layout template for whole site, to save duplication
+- Uses one header layout template for whole site, to save duplication
+- Lazy loads fonts with new CSS `font-display` property
+- Dedicated mailing list page template
+- Newly drawn search icon
+- Reworks search fields' semantics and restyles accordingly
+- Includes html5 shiv and responsive-nav js differently (better)
+- Uses traditional sectioning headings, rather than now-depricated HTML5 method
+- Increases CTA heading size
+
+### Fixes
+- Fixes some broken links in footer (privacy policy and terms)
+- Fixes broken project links on servcies pages
+- Makes subscribed/unsubscribed pages reference Resources rather than the blog
+- Fixes flash of 'open' mobile nav on smaller screens when page loads
+
+### Removes
+- Removes [Bower](https://bower.io)
+- Gets rid of scss linting (for now)
+- Removes downloads page
+- Removes unnecessary link and form input colour animations on hover/focus
+
+
+## [4.9.0] - 2018-02-07
+
+### Adds
+- New resources section, more or less mirroring the setup of Blog with:
+    - Resource index
+    - Resource page
+    - Resource categories
+- Introductory paragraph on blog index
+- Adds top and bottom borders to the page to brighten it up a wee bit
+
+### Changes
+- Updates to Perch 3.0.14
+- Makes blog call to action 'follow me on Twitter', rather than a mailing list subscribe form
+- Makes twitter svg reuseable
+
+### Fixes
+- Fixes blog navigation pagination
+- Sitemap.xml now works
+- Sorts out form width issue
+
+### Removes
+Gets rid of PostCSS Stylelint (for time being)

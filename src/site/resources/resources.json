@@ -1,0 +1,6 @@
+{
+  "layout": "article.html",
+  "hideIntro": true,
+  "tags" : ["resource"],
+  "permalink": "resources/{{ customURL if customURL else title | slugify | safe }}.html"
+}
