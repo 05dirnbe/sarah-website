@@ -1,11 +1,10 @@
 ---
-title: About Martin at tempertemper
-heading: About Martin
+title: About Sarah at tempertemper
+heading: About Sarah
 intro: |
-    It's very nice that you want to know more about me! I’m Martin and I design and build websites. I'm from Glasgow but live in Newcastle upon Tyne; married with two kids.
+    It's very nice that you want to know more about me! I’m Sarah and I am a researcher. I'm from Salzburg but I live in Graz; I live with my partner and our son.
 layout: default
 permalink: about.html
-cta: true
 summaryImage: martin-underhill-tempertemper.jpg
 summaryImageAlt: Martin Underhill of tempertemper Web Design
 ---
