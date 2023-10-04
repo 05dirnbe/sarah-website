@@ -1,0 +1,14 @@
+---
+title: Teaching
+intro: |
+    Do you study physics? Into experiments? Here's what I can teach you.
+layout: default
+resources: true
+noCta: true
+---
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.teaching | reverse %}
+        {%- include "post-in-list.html" %}
+    {%- endfor %}
+</ol>

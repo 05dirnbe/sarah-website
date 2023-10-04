@@ -1,4 +1,4 @@
-{%- if (tags.length >= 1 and (blogPost or resource or 'case-study')) or home %}
+{%- if (tags.length >= 1 and (blogPost or resource or 'case-study' or 'teaching')) or home %}
     {%- set briefPostInList = true %}
 {%- endif -%}
 
@@ -9,15 +9,35 @@
         </a>
     {% if briefPostInList %}</h3>{% else %}</h2>{% endif %}
     {% if not briefPostInList %}
-    <p class="details">
+
         {% if post.data.tags.includes('post') %}
-            Article
+            <p class="details">
+                Article
+                posted {{ post.data.date | date }}
+                {% include "post-categories.html" %}
+            </p>
         {% elif post.data.tags.includes('resource') %}
-            Resource
+            <p class="details">
+                Resource
+                posted {{ post.data.date | date }}
+                {% include "post-categories.html" %}
+            </p>
+
+        {% elif post.data.tags.includes('teaching') %}
+            <p class="details">
+
+                {% include "post-lecturers.html" %}
+
+                {% include "post-categories.html" %}
+            </p>
+
+        {% else %}
+            <p class="details">
+                posted {{ post.data.date | date }}
+                {% include "post-categories.html" %}
+            </p>
         {% endif -%}
-        posted {{ post.data.date | date }}
-        {% include "post-categories.html" %}
-    </p>
+
     {% endif %}
     <div class="description entry-summary">
         {{ post.data.intro  | markdown | safe }}
