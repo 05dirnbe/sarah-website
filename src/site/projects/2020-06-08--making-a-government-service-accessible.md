@@ -3,6 +3,9 @@ title: Making a Government service accessible
 intro: |
     I worked on a Government service for nearly two and a half years, spending much of that time ensuring it was accessible. Here's how it happened.
 date: 2020-06-08
+collaborators:
+    -   name: "Reinhard Alkofer"
+        website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
 summaryImage: colour-contrast.png
 summaryImageAlt: An image showing two banners with different colours; one that doesn't pass WCAG AA colour contrast and one other that does
 ---

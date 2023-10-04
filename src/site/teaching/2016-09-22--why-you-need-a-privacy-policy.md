@@ -7,6 +7,8 @@ colecturers:
         website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
     -   name: 'Reinhard Alkofer'
         website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
+    -   name: 'Christof Gattringer'
+        website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
 
 date: 2016-09-22
 tags:

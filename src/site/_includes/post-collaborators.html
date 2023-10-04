@@ -1,0 +1,25 @@
+{% if people %}
+
+    {%- set l = people.length %}
+
+    {% if (l == 1) %}
+        {{praefix}} <a href="{{ people[0].website }}">{{ people[0].name }}</a><br>
+    {% elif (l > 1) %}
+        {{praefix}}
+        {% for person in people %}
+            {%- if loop.length >= 1 %}
+                {%- if not loop.last %}
+                    {%- if not loop.first -%}
+                        ,
+                    {% endif %}
+                {%- else %}
+                    and&nbsp;
+                {%- endif -%}
+            {%- endif -%}
+            <a href="{{ person.website }}">{{ person.name }}</a>
+            {%- if loop.last -%}
+            <br>
+            {% endif %}
+        {%- endfor %}
+    {% endif %}
+{% endif %}

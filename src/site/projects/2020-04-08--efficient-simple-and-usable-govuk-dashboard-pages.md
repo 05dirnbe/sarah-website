@@ -3,6 +3,11 @@ title: Efficient, simple and usable GOV.UK dashboard pages
 intro: |
     In the service I've worked on for the last two years, a lot of improvements have been made. One huge win was the dashboard page.
 date: 2020-04-08
+collaborators:
+    -   name: "Reinhard Alkofer"
+        website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
+    -   name: "Christof Gattringer"
+        website: "https://homepage.uni-graz.at/de/christof.gattringer/"
 summaryImage: dashboard--new--renewal-due.png
 summaryImageAlt: The dashboard I redesigned, with some intro text and a button at the top and other registration information underneath, including a red number showing unread messages
 ---

@@ -25,14 +25,17 @@
 
         {% elif post.data.tags.includes('teaching') %}
             <p class="details">
-
-                {% include "post-lecturers.html" %}
-
+                {%- set people = post.data.colecturers %}
+                {%- set praefix = 'tought together with' %}
+                {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
 
         {% elif post.data.tags.includes('project') %}
             <p class="details">
+                {%- set people = post.data.collaborators %}
+                {%- set praefix = 'in collaboration with' %}
+                {% include "post-collaborators.html" %}
                 Status:
                 {% if post.data.status %}
                     {{post.data.status}}

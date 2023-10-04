@@ -1,9 +1,11 @@
 ---
-title: Introduction to Quantum Optics
+title: Arduino is awesome
 intro: |
     Every now and then something big happens on the web. Sometimes it’s really obvious, sometimes a bit subtler, but still very important. SSL is a subtle
 colecturers:
     -   name: 'Sarko Surnev'
+        website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
+    -   name: 'Axel Maas'
         website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
 date: 2016-06-28
 tags:
