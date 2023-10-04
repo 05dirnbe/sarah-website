@@ -14,10 +14,15 @@
     {%- set linkToList = '/portfolio/' %}
     {%- set items = collections['case-study'] %}
 {%- elif tags.includes('project') %}
-    {%- set caseStudy = true %}
+    {%- set researchProject = true %}
     {%- set typeOfThing = 'research projects' %}
     {%- set linkToList = '/research/' %}
     {%- set items = collections['project'] %}
+{%- elif tags.includes('teaching') %}
+    {%- set course = true %}
+    {%- set typeOfThing = 'courses' %}
+    {%- set linkToList = '/teaching/' %}
+    {%- set items = collections['teaching'] %}
 {%- endif %}
 <section aria-labelledby="further-reading-heading" class="teaser">
     <h2 id="further-reading-heading">More {{ typeOfThing }}</h2>
