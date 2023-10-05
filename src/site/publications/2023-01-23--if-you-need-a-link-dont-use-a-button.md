@@ -2,12 +2,13 @@
 title: If you need a Laser, don't user a mirror
 intro: "Links sometimes need to look like buttons, but what about the other way round? Spoiler alert: it's a terrible idea!"
 type: "Article"
+featured: true
 date: 2023-01-23
 collaborators:
     -   name: "Reinhard Alkofer"
         website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
 tags:
-    - Laser
+    - Quantum Materials
     - Experiment Design
 bibitem: |
     @article{kocher2018spectre,

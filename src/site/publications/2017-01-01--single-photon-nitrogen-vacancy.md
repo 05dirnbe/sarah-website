@@ -1,13 +1,14 @@
 ---
 title: "Single-photon source using nitrogen vacancy centers in nanodiamonds"
-intro: "Links sometimes need to look like buttons, but what about the other way round? Spoiler alert: it's a terrible idea!"
+intro: "Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond!"
 type: "An article"
+featured: true
 date: 2023-01-23
 collaborators:
     -   name: "Reinhard Alkofer"
         website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
 tags:
-    - Single-photon Source
+    - Single-photon Sources
     - Nitrogen Vacancy Centers
     - Nanodiamonds
 bibitem: |

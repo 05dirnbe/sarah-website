@@ -18,12 +18,23 @@ layout: base.html
     {{- content | safe }}
 </article>
 
+<section aria-labelledby="my-research-focus">
+    <h2 id="my-research-focus">Areas of Interest</h2>
+    <p>There are a few topics that my work centers around:</p>
+    <ul>
+        <li><a href="/category/single-photon-sources">Single Photon Sources</a> is about quantum emitters emitting single photons.</li>
+        <li><a href="/category/quantum-materials">Quantum Materials</a> is about the crazy stuff that happens on small scales.</li>
+    </ul>
+     <p>Have a look at the <a href="/categories">full list of subjects</a> I care about.</p>
+</section>
+
+
 <section aria-labelledby="writing" class="teaser">
-    <h2 id="writing">Writing</h2>
-    <p>If you prefer to dive straight in rather than <a href="/blog/">see the full blog</a>, here are a couple of my favourite articles to get you started:</p>
+    <h2 id="writing">Selected Publications</h2>
+    <p>If you prefer to dive straight in rather than <a href="/publications/">see the full publication list</a>, here are a couple of my favourite publications to get you started:</p>
     <ul class="index-list" reversed>
-        {%- set posts = collections.post | reverse %}
-        {%- for post in posts %}
+        {%- set publications = collections.publication | reverse %}
+        {%- for post in publications %}
             {%- if post.data.featured === true %}
                 {%- include "post-in-list.html" -%}
             {%- endif %}
@@ -31,13 +42,16 @@ layout: base.html
     </ul>
 </section>
 
-<section aria-labelledby="my-favourite-subjects">
-    <h2 id="my-favourite-subjects">Subjects</h2>
-    <p>There are a few topics that really interest me:</p>
-    <ul>
-        <li><a href="/category/accessibility">Accessibility</a> is about designing and building web interfaces that can be used by everyone, something I feel very strongly about</li>
-        <li><a href="/category/design">Designing</a> smart, usable interfaces, journeys and interactions is what I do best, and I enjoy analysing others’ great design</li>
-        <li><a href="/category/development">Frontend development</a> is a huge passion of mine; HTML and CSS in particular, but anything from Git to npm</li>
-    </ul>
-     <p>Have a look at the <a href="/categories">full list of subjects</a> I write about.</p>
+<section aria-labelledby="my-teaching-focus">
+    <h2 id="my-teaching-focus">Current Teaching</h2>
+    <p>Here's a glimps of the courses I am currently active in:</p>
+    <div>
+    <iframe
+    title="View of courses Sarah is teaching currently or in the near future."
+    src="https://online.uni-graz.at/kfu_online/wblvangebot.wbshowlvoffer?ppersonnr=72850"
+    width="100%"
+    height="700">
+    </iframe>
+    </div>
+    <p>Have a look at the <a href="/teaching">full list of course</a> I teach.</p>
 </section>
