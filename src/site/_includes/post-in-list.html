@@ -26,7 +26,7 @@
         {% elif post.data.tags.includes('teaching') %}
             <p class="details">
                 {%- set people = post.data.colecturers %}
-                {%- set praefix = 'tought together with' %}
+                {%- set praefix = 'together with' %}
                 {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
