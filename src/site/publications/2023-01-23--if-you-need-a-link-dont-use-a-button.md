@@ -1,7 +1,7 @@
 ---
 title: If you need a Laser, don't user a mirror
 intro: "Links sometimes need to look like buttons, but what about the other way round? Spoiler alert: it's a terrible idea!"
-type: "Book"
+type: "Article"
 date: 2023-01-23
 collaborators:
     -   name: "Reinhard Alkofer"
@@ -9,6 +9,14 @@ collaborators:
 tags:
     - Laser
     - Experiment Design
+bibitem: |
+    @article{kocher2018spectre,
+      title={Spectre Attacks: Exploiting Speculative Execution},
+      author={Kocher, Paul and Genkin, Daniel and Gruss, Daniel and Haas, Werner and Hamburg, Mike and Lipp, Moritz and Mangard, Stefan and Prescher, Thomas and Schwarz, Michael and Yarom, Yuval},
+      journal={arXiv preprint arXiv:1801.01203},
+      year={2018},
+      url={https://arxiv.org/pdf/1801.01203},
+    }
 ---
 
 I've written about when [links need to look like buttons](/blog/when-design-breaks-semantics), but what about when a button might need to look like a link?

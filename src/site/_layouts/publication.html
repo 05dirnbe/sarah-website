@@ -16,10 +16,14 @@ layout: base.html
         {% endif %}
         </p>
     </section>
+    <section aria-label="Citation details" class="post-details">
+        {% bibtex %}
+            {{ bibitem | safe }}
+        {% endbibtex %}
+    </section>
     <div itemprop="mainEntityOfPage">
         {{ content | safe }}
     </div>
 </article>
 
-{% include "call-to-action.html" %}
 {% include "more-posts.html" %}

@@ -17,6 +17,12 @@ module.exports = eleventyConfig => {
   const smartypants = require("smartypants");
   eleventyConfig.addFilter("smart", str => smartypants.smartypants(str, 'qDe'));
 
+  /* Bibtex to markdown */
+  eleventyConfig.addPairedShortcode(
+    "bibtex",
+    require("./lib/functions/bib_to_markdown.js")
+  );
+
   /* Markdown Plugins */
   var uslug = require('uslug');
   var uslugify = s => uslug(s);

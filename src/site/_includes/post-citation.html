@@ -1,0 +1,6 @@
+{% if post.data.bibitem %}
+{% set item = post.data.bibitem %}
+    {% bibtex %}
+        {{ item | safe }}
+    {% endbibtex %}
+{% endif %}

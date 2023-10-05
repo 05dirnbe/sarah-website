@@ -23,6 +23,11 @@
     {%- set typeOfThing = 'courses' %}
     {%- set linkToList = '/teaching/' %}
     {%- set items = collections['teaching'] %}
+{%- elif tags.includes('publication') %}
+    {%- set publication = true %}
+    {%- set typeOfThing = 'publications' %}
+    {%- set linkToList = '/publications/' %}
+    {%- set items = collections['publication'] %}
 {%- endif %}
 <section aria-labelledby="further-reading-heading" class="teaser">
     <h2 id="further-reading-heading">More {{ typeOfThing }}</h2>

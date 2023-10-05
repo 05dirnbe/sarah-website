@@ -10,6 +10,17 @@ summaryImage: colour-contrast.png
 summaryImageAlt: An image showing two banners with different colours; one that doesn't pass WCAG AA colour contrast and one other that does
 ---
 
+{% bibtex %}
+@article{kocher2018spectre,
+  title={Spectre Attacks: Exploiting Speculative Execution},
+  author={Kocher, Paul and Genkin, Daniel and Gruss, Daniel and Haas, Werner and Hamburg, Mike and Lipp, Moritz and Mangard, Stefan and Prescher, Thomas and Schwarz, Michael and Yarom, Yuval},
+  journal={arXiv preprint arXiv:1801.01203},
+  year={2018},
+  url={https://arxiv.org/pdf/1801.01203},
+}
+{% endbibtex %}
+
+
 In March 2018 I began work as the interaction designer on a government service that was in pretty bad shape. It was a couple of years old by that point and it hadn't had the care and attention it needed, which was causing problems. That in itself would have been challenge enough, but it was also one of the largest services in HMRC.
 
 It contained were design patterns that were out of date, new best practices having been introduced more recently, and its sheer size had meant it contained custom designs to cater for user needs that nothing in the design system had up to that point catered for.
