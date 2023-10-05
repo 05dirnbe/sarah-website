@@ -1,0 +1,24 @@
+---
+title: Things I do
+heading: Services and Functions
+intro: |
+    In addition to my [research](/research/) and my [teaching](/teaching/) activities I serve in various ways. Here are some of the things I like to shout about.
+layout: default
+noCta: true
+listing: true
+---
+
+<ul class="index-list">
+    {% for service in collections.service | ordered %}
+        <li class="post-in-list">
+            <h2 class="entry-title">
+                <a href="{{ service.url  | replace(".html", "") }}">
+                    {{ service.data.title | smart | safe }}
+                </a>
+            </h2>
+            <div class="description entry-summary">
+                {{ service.data.intro  | markdown | safe }}
+            </div>
+        </li>
+    {% endfor %}
+</ul>

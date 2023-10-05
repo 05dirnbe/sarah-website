@@ -1,0 +1,5 @@
+{
+  "layout": "service.html",
+  "tags" : ["service"],
+  "permalink": "service/{{ customURL if customURL else title | slugify | safe }}.html"
+}
