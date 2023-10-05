@@ -1,18 +1,12 @@
 ---
-title: A bachelor thesis
+title: A nice talk about Laser stuff
 intro: |
-    Some experimental labwork involving all sorts of strange contraptions.
-date: 2023-09-07
-type: bachelor thesis
-tags:
-    - Bachelor Thesis
-    - Laser Physics
-status: 'ongoing'
-supervisors:
-    -   name: "Reinhard Alkofer"
-        website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
-supervisees:
-    -   name: "Maria Rakete"
+    The little material that could ... emit amplified light.
+date: 2023-04-07
+type: "talk"
+event:
+    name: "LaserCon"
+    website: "https://world-of-photonics.com/en/"
 summaryImage: task-list--plain-text.png
 summaryImageAlt: The task list pattern I designed that was accepted into the HMRC Design Patterns library
 ---

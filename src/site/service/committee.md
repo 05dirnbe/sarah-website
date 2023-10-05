@@ -1,8 +1,8 @@
 ---
-title: Perch CMS
+title: Experimental Comittee
 intro: |
-    Since 2010 I've built countless websites using Perch. It's a joy to work with, and makes it so easy to update content that my clients love it too.
-order: 6
+    Since 2010 I've been on countless comittee meetings ... learn what came of it.
+order: 2
 ---
 
 I read about Perch in [Net Magazine](https://www.creativebloq.com/net-magazine) back in 2010, when searching for a WordPress alternative (me and WordPress have never seen eye to eye!). Perch has always had an easy to interpret and well organised structure and the thoughtfully designed control panel makes so much more sense to my clients.

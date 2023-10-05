@@ -23,22 +23,33 @@
                 {% include "post-categories.html" %}
             </p>
 
+        {% elif post.data.tags.includes('dissemination') %}
+            <p class="details">
+                A {{post.data.type}}
+                {%- set people = post.data.colecturers %}
+                {%- set praefix = 'co-presented by' %}
+                {% include "post-collaborators.html" %}
+                {% include "post-categories.html" %}
+            </p>
+
         {% elif post.data.tags.includes('teaching') %}
             <p class="details">
+                A {{post.data.type}}
                 {%- set people = post.data.colecturers %}
-                {%- set praefix = 'together with' %}
+                {%- set praefix = 'co-taught by' %}
                 {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
 
         {% elif post.data.tags.includes('theses') %}
             <p class="details">
+                A {{post.data.type}}
                 {%- set people = post.data.supervisors %}
                 {%- set praefix = 'co-supervised by' %}
                 {% include "post-collaborators.html" %}
 
                 {%- set people = post.data.supervisees %}
-                {%- set praefix = 'assigned to' %}
+                {%- set praefix = 'Conducted by' %}
                 {% include "post-collaborators.html" %}
 
                 Status:
@@ -52,6 +63,7 @@
 
         {% elif post.data.tags.includes('project') %}
             <p class="details">
+                A research project
                 {%- set people = post.data.collaborators %}
                 {%- set praefix = 'in collaboration with' %}
                 {% include "post-collaborators.html" %}

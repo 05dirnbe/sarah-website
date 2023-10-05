@@ -1,0 +1,20 @@
+---
+title: Dissemination
+intro: |
+    Sharing my research findings with the public and expert audiences whereever I can.
+layout: default
+resources: true
+cta:
+    custom: true
+    headline: "Interested in spreading knowledge?"
+    intro: |
+        If you are interested in my work and expertise, that's great! Let's talk about:
+
+        - Speaking at your event for experts or wider audiences
+---
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.dissemination | reverse %}
+        {%- include "post-in-list.html" %}
+    {%- endfor %}
+</ol>

@@ -2,6 +2,7 @@
 title: 'Solid State Physics: Size Effects and Quantum Phenomena'
 intro: |
     This lecture teaches modern solid state physics based on size effects, dimensionality and quantum phenomena.
+type: "lecture"
 card:
     url: "https://online.uni-graz.at/kfu_online/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/829803?$ctx=design=ca;lang=de&$scrollTo=toc_overview"
     events: "https://online.uni-graz.at/kfu_online/wbTermin_list.wbLehrveranstaltung?pStpSpNr=829803&pHighlightDate=&pSort=&pFilter=&pMaskAction="
