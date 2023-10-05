@@ -19,7 +19,7 @@ colecturers:
         website: 'https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=5204FAE994D83BC8&pPersonenGruppe=3'
 date: 2023-10-01
 tags:
-    - Vorlesung (VO)
+    - Vorlesung
     - WS 2023
 ---
 
