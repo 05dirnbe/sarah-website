@@ -23,6 +23,15 @@
                 {% include "post-categories.html" %}
             </p>
 
+        {% elif post.data.tags.includes('publication') %}
+            <p class="details">
+                A {{post.data.type}}
+                {%- set people = post.data.collaborators %}
+                {%- set praefix = 'co-authored by' %}
+                {% include "post-collaborators.html" %}
+                {% include "post-categories.html" %}
+            </p>
+
         {% elif post.data.tags.includes('dissemination') %}
             <p class="details">
                 A {{post.data.type}}

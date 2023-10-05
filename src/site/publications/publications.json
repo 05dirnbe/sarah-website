@@ -1,0 +1,6 @@
+{
+  "layout": "publication.html",
+  "hideIntro": true,
+  "tags": ["publication"],
+  "permalink": "publications/{{ customURL if customURL else title | slugify | safe }}.html"
+}
