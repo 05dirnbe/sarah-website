@@ -3,7 +3,12 @@
     {%- set l = people.length %}
 
     {% if (l == 1) %}
-        {{praefix}} <a href="{{ people[0].website }}">{{ people[0].name }}</a><br>
+        {{praefix}}
+        {% if people[0].website and people[0].name %}
+            <a href="{{ people[0].website }}">{{ people[0].name }}</a><br>
+        {% elif people[0].name and not people[0].website %}
+            {{ people[0].name }}<br>
+        {% endif %}
     {% elif (l > 1) %}
         {{praefix}}
         {% for person in people %}
@@ -16,7 +21,11 @@
                     and&nbsp;
                 {%- endif -%}
             {%- endif -%}
-            <a href="{{ person.website }}">{{ person.name }}</a>
+            {%- if person.website and person.name -%}
+                <a href="{{ person.website }}">{{ person.name }}</a>
+            {%- elif person.name and not person.website -%}
+                {{ person.name }}
+            {%- endif -%}
             {%- if loop.last -%}
             <br>
             {% endif %}

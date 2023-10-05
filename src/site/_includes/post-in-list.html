@@ -1,4 +1,4 @@
-{%- if (tags.length >= 1 and (blogPost or resource or 'case-study' or 'teaching' or 'project')) or home %}
+{%- if (tags.length >= 1 and (blogPost or resource or 'case-study' or 'teaching' or 'project' or 'service' or 'theses')) or home %}
     {%- set briefPostInList = true %}
 {%- endif -%}
 
@@ -30,6 +30,25 @@
                 {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
+
+        {% elif post.data.tags.includes('theses') %}
+            <p class="details">
+                {%- set people = post.data.supervisors %}
+                {%- set praefix = 'co-supervised by' %}
+                {% include "post-collaborators.html" %}
+
+                {%- set people = post.data.supervisees %}
+                {%- set praefix = 'assigned to' %}
+                {% include "post-collaborators.html" %}
+
+                Status:
+                {% if post.data.status %}
+                    {{post.data.status}}
+                {% else %}
+                    ongoing
+                {% endif -%}
+            </p>
+
 
         {% elif post.data.tags.includes('project') %}
             <p class="details">

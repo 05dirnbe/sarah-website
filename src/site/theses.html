@@ -1,0 +1,21 @@
+---
+title: Theses
+intro: |
+    Here you find a list of active and completed thesis topics I work on with students.
+layout: default
+resources: true
+cta:
+    custom: true
+    headline: "Interested in writing your thesis?"
+    intro: |
+        If you are interested in doing thesis research with me, that's great! Let's talk about:
+
+        - Bachelor and Master level research
+        - Available thesis topics
+---
+
+<ol class="hfeed index-list" reversed>
+    {%- for post in collections.theses | reverse %}
+        {%- include "post-in-list.html" %}
+    {%- endfor %}
+</ol>
