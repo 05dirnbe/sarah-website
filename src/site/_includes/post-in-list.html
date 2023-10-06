@@ -1,31 +1,18 @@
-{%- if (tags.length >= 1 and (blogPost or resource or 'case-study' or 'teaching' or 'project' or 'service' or 'theses' or 'publication')) or home %}
+{%- if (tags.length >= 1 and ('teaching' or 'project' or 'service' or 'theses' or 'publication' or 'dissemination')) or home %}
     {%- set briefPostInList = true %}
 {%- endif -%}
 
 <li class="post-in-list">
     {%- if briefPostInList %}<h3>{% else %}<h2 class="entry-title">{% endif %}
-        <a href="{{ post.url  | replace(".html", "") }}">
+<a href="{{ post.url  | replace(".html", "") }}">
             {{ post.data.title | smart | safe }}
         </a>
     {% if briefPostInList %}</h3>{% else %}</h2>{% endif %}
     {% if not briefPostInList %}
 
-        {% if post.data.tags.includes('post') %}
+        {% if post.data.tags.includes('publication') %}
             <p class="details">
-                Article
-                posted {{ post.data.date | date }}
-                {% include "post-categories.html" %}
-            </p>
-        {% elif post.data.tags.includes('resource') %}
-            <p class="details">
-                Resource
-                posted {{ post.data.date | date }}
-                {% include "post-categories.html" %}
-            </p>
-
-        {% elif post.data.tags.includes('publication') %}
-            <p class="details">
-                A publication
+                Publication
                 {% include "post-categories.html" %}
             </p>
             <p class="details">
@@ -34,7 +21,7 @@
 
         {% elif post.data.tags.includes('dissemination') %}
             <p class="details">
-                A {{post.data.type}}
+                {{post.data.type}}
                 {%- set people = post.data.colecturers %}
                 {%- set praefix = 'co-presented by' %}
                 {% include "post-collaborators.html" %}
@@ -43,16 +30,26 @@
 
         {% elif post.data.tags.includes('teaching') %}
             <p class="details">
-                A {{post.data.type}}
+                {{post.data.type}}
                 {%- set people = post.data.colecturers %}
                 {%- set praefix = 'co-taught by' %}
                 {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
 
+
+        {% elif post.data.tags.includes('service') %}
+            <p class="details">
+                {{post.data.type}}
+                {%- set people = post.data.collaborators %}
+                {%- set praefix = 'serving with' %}
+                {% include "post-collaborators.html" %}
+                {% include "post-categories.html" %}
+            </p>
+
         {% elif post.data.tags.includes('theses') %}
             <p class="details">
-                A {{post.data.type}}
+                {{post.data.type}}
                 {%- set people = post.data.supervisors %}
                 {%- set praefix = 'co-supervised by' %}
                 {% include "post-collaborators.html" %}
@@ -69,10 +66,9 @@
                 {% endif -%}
             </p>
 
-
         {% elif post.data.tags.includes('project') %}
             <p class="details">
-                A research project
+                Research project
                 {%- set people = post.data.collaborators %}
                 {%- set praefix = 'in collaboration with' %}
                 {% include "post-collaborators.html" %}

@@ -3,6 +3,13 @@ title: Mentoring
 intro: |
     Mentoring young people as they make their way through academia is a privilege.
 order: 1
+type: "Mentoring Program"
+collaborators:
+    - name: Peter Banzer
+tags:
+    - Academic Career
+    - Women in Science
+    - Mental Health
 cta:
     custom: true
     headline: "Need a mentor?"

@@ -3,6 +3,15 @@
         <h2 id="ctaLabel">{{cta.headline}}</h2>
         {{ cta.intro | markdown | safe }}
         <a href="/contact">Contact me</a>
+    {% elif tags.includes('theses') %}
+        <h2 id="ctaLabel">Interested in writing a thesis?</h2>
+        <p>If you are interested in doing thesis research with me, that's great! Let's talk about:</p>
+        <ul>
+            <li>Bachelor and Master level research</li>
+            <li>Your scientific interests</li>
+            <li>Available thesis topics</li>
+        </ul>
+        <a href="/contact">Contact me</a>
     {% else %}
         <h2 id="ctaLabel">Academic work is team work</h2>
         <p>If you'd like to get together, share ideas or collaborate, I’d love to hear from you.</p>

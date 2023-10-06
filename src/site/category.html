@@ -5,35 +5,30 @@ pagination:
   alias: category
   filter:
     - all
-    - resource
-    - testimonial
-    - post
 layout: default
 permalink: /category/{{ category | slugify | safe }}.html
 ---
 
-{% if category == 'Accessibility' %}
-    <p>Accessibility and inclusive design should be the first considerations when designing a digital product, service or website.
-{% elif category == 'Apple' %}
-    <p>Apple are a company where good design is at the centre of everything they produce, both hardware and software. They don’t always pull it off, but I love that they sweat the tiniest details.
-{% elif category == 'Business' %}
-    <p>I’m a small business owner; these are tips and tricks that might come in useful for other business owners.
-{% elif category == 'Design' %}
-    <p>Interaction design, user experience design, user interface design; design is a fascinating subject.
-{% elif category == 'Development' %}
-    <p>Frontend web development, from HTML, ARIA, CSS and JavaScript to Git and good development practices.
-{% elif category == 'Markdown' %}
-    <p>For me, Markdown is the only way to write for the web. In fact, it should be the defacto way to write, full-stop!
-{% elif category == 'Performance' %}
-    <p>If a website isn’t fast, it isn’t accessible.
-{% elif category == 'Tools' %}
-    <p>The tools of the trade are important: hardware, apps, helpful features; even languages like <a href="/category/markdown">Markdown</a>.
-{% elif category == 'Workflows' %}
-    <p>I’m always looking to refine the way I work, whether it’s process or the software I use.
+{% if category == 'Vorlesung' %}
+    <p>Browse the lectures I teach or check out my other <a href="/teaching">teaching activities</a>.
+{% elif category == 'Übung' %}
+    <p>Browse the courses I teach or check out my other <a href="/teaching">teaching activities</a>.
+{% elif category == 'Seminar' %}
+    <p>Browse the seminars I give or check out my other <a href="/teaching">teaching activities</a>.
+{% elif category == 'Workshops' %}
+    <p>Browse the workshops I hold or check out my other <a href="/teaching">teaching activities</a>.
+{% elif category == 'Bachelor Thesis' %}
+    <p>Browse the bachelor theses I supervise or check out my other <a href="/theses">supervising activities</a>.
+{% elif category == 'Master Thesis' %}
+    <p>Browse the master theses I supervise or check out my other <a href="/theses">supervising activities</a>.
+{% elif category == 'PhD Thesis' %}
+    <p>Browse the doctoral theses I supervise or check out my other <a href="/theses">supervising activities</a>.
+{% elif category == 'Talk' %}
+    <p>Browse the talks I give or check out my other <a href="/dissemination">dissemination activities</a>.
 {% else %}
-    <p>Articles and resources in the {{ category }} category.
+    <p>Resources in the {{ category }} category.
 {% endif %}
-A <a href="/categories">full list of categories</a> is also available.</p>
+    A <a href="/categories">full list of categories</a> is also available.</p>
 
 <ol class="hfeed index-list" reversed>
     {% set categoryList = collections[ category ] %}
