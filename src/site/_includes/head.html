@@ -8,14 +8,14 @@
     {%- else %}
         {%- set pageTitle = heading | smart | safe %}
     {%- endif %}
-    <title>{{ pageTitle }} – tempertemper</title>
+    <title>{{ pageTitle }} – {{ site.title }}</title>
     {%- if description %}
         {%- set description = description | smart | safe %}
     {%- elif intro %}
         {%- set description = intro | markdown | safe | striptags(true) | escape %}
     {%- else %}
         {%- if category %}
-            {%- set description = "Articles and resources in the " + category + " category." %}
+            {%- set description = "Resources in the " + category + " category." %}
         {%- else %}
             {%- set description = content | striptags(true) | escape | truncate(150) %}
         {%- endif %}
@@ -26,7 +26,7 @@
         {%- set cardType = "summary_large_image" %}
         {%- if summaryImage == "large" %}
             {%- set cardImage = site.url + "/assets/img/summary_large_image.png" %}
-            {%- set imageAlt = "tempertemper’s logo: a blue rectange with a white rectangle/underscore in the bottom-right corner" %}
+            {%- set imageAlt = "Sarah's Science logo: a red laserbeam with a flare at the very right." %}
             {%- set imageWidth = 1200 %}
             {%- set imageHeight = 628 %}
         {%- else %}
@@ -36,6 +36,16 @@
                 {%- set imgDir = 'case-studies/' %}
             {%- elif (tags.length >= 1) and tags.includes('post') %}
                 {%- set imgDir = 'blog/' %}
+            {%- elif (tags.length >= 1) and tags.includes('teaching') %}
+                {%- set imgDir = 'teaching/' %}
+            {%- elif (tags.length >= 1) and tags.includes('project') %}
+                {%- set imgDir = 'research/' %}
+            {%- elif (tags.length >= 1) and tags.includes('theses') %}
+                {%- set imgDir = 'theses/' %}
+            {%- elif (tags.length >= 1) and tags.includes('dissemination') %}
+                {%- set imgDir = 'dissemination/' %}
+            {%- elif (tags.length >= 1) and tags.includes('service') %}
+                {%- set imgDir = 'service/' %}
             {%- else %}
                 {%- set imgDir = '' %}
             {%- endif %}
@@ -50,22 +60,22 @@
     {%- else %}
         {%- set cardType = "summary" %}
         {%- set cardImage = site.url + "/assets/img/summary.png" %}
-        {%- set imageAlt = "tempertemper’s icon: a blue square with a white rectangle/underscore in the bottom-right corner" %}
+        {%- set imageAlt = "Sarah's Science logo: a red laserbeam with a flare at the very right." %}
         {%- set imageWidth = 512 %}
         {%- set imageHeight = 512 %}
     {%- endif %}
-    <meta property="og:site_name" content="tempertemper Web Design" />
+    <meta property="og:site_name" content="{{site.title}}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url | replace('.html', '') }}" />
     <meta property="og:title" content="{{ pageTitle }}" />
     <meta property="og:description" content="{{ description }}" />
     <meta property="og:image" content="{{ cardImage }}" />
     <meta property="og:image:type" content="{{ imageType }}" />
-    {%- if (tags.length >= 1) and (tags.includes('post') or tags.includes('resource')) %}
+    {%- if (tags.length >= 1) and (tags.includes('publication') or tags.includes('project')) %}
         <meta property="og:image:width" content="{{ imageWidth }}" />
         <meta property="og:image:height" content="{{ imageHeight }}" />
     {%- endif %}
     <meta property="og:image:alt" content="{{ imageAlt }}" />
-    {%- if tags.length >= 1 and (tags.includes('post') or tags.includes('resource')) %}
+    {%- if tags.length >= 1 and (tags.includes('publication') or tags.includes('project')) %}
         {%- set type = "article" %}
     {%- else %}
         {%- set type = "website" %}
@@ -87,21 +97,13 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="color-scheme" content="dark light" />
 
-    <link href="https://mastodon.social/@tempertemper" rel="me">
-
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace('.html', '') }}" />
-    {%- if site.env == 'development' %}
-        <link rel="icon" href="/favicon--dev.ico" />
-        <link rel="icon" href="/assets/img/icons/favicon--dev.svg" type="image/svg+xml" />
-    {%- else %}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" href="/assets/img/icons/favicon.svg" type="image/svg+xml" />
-    {%- endif %}
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/assets/img/icons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#262626" media="(prefers-color-scheme: dark)" />
-    <!--[if lte IE 9]><script src="/assets/js/html5shiv.min.js"></script><![endif]-->
     <link rel="preload" href="/assets/fonts/FSMeWeb-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/FSMeWeb-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/FSMeWeb-Italic.woff2" as="font" type="font/woff2" crossorigin />
@@ -110,8 +112,6 @@
     <link rel="preload" href="/assets/css/non-critical.css?v={{ site.version }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="/assets/css/non-critical.css?v={{ site.version }}" /></noscript>
     <link rel="stylesheet" media="print" href="/assets/css/print.css?v={{ site.version }}" />
-    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/assets/css/ie8.css" /><![endif]-->
-    <!--[if IE 9]><link rel="stylesheet" type="text/css" href="/assets/css/ie9.css" /><![endif]-->
     <script type="application/ld+json">
         {
             "@context" : "https://schema.org",

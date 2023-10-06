@@ -9,13 +9,13 @@ permalink: feeds/main.json
   "description": "{{ description }}",
   "author": {
     "name": "{{ site.author.name }}",
-    "url": "https://mastodon.social/@tempertemper",
-    "avatar": "{{ site.url }}/assets/img/martin-underhill-tempertemper--square-512x512.jpg"
+    "url": "{{ site.author.linkedin}}",
+    "avatar": "{{ site.url }}/assets/img/sarah-lindner--square-512x512.jpg"
   },
-  "icon": "{{ site.url }}/assets/img/tempertemper-feed.png",
+  "icon": "{{ site.url }}/assets/img/feed.png",
   "favicon": "{{ site.url }}/assets/img/icons/favicon.png",
   "items": [
-  {%- for post in collections.post | reverse %}
+  {%- for post in collections.publication | reverse %}
     {
       "id": "{{ loop.revindex }}",
       "date_published": "{{ post.date | rssDate }}",
@@ -28,7 +28,7 @@ permalink: feeds/main.json
       {%- endif %}
       "url": "{{ site.url }}{{ post.url | replace (".html", "") }}",
       {%- set postContent = post.templateContent %}
-      {%- set commonContent = '<p>The article <a rel="nofollow" href="' + site.url + post.url | replace (".html", "") + '">' + post.data.title | smart | safe | replace("&nbsp;", " ") + '</a> appeared first on <a rel="nofollow" href="' + site.url + '">www.tempertemper.net</a>.</p>\n' %}
+{%- set commonContent = '<p>The publication <a rel="nofollow" href="' + site.url + post.url | replace (".html", "") + '">' + post.data.title | smart | safe | replace("&nbsp;", " ") + '</a> was announced first on <a rel="nofollow" href="' + site.url + '">{{site.title}}</a>.</p>\n' %}
       {%- set content = [postContent, commonContent] %}
       "content_html": {{ content | join | dump | safe }}
     }

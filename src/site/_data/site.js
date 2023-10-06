@@ -1,10 +1,10 @@
 module.exports = {
-  "title": "Sarah's Science",
+  "title": "Sarah's Lab",
   "company": "Sarah Lindner",
   "version": "1.0.1",
-  "url": "https://www.sarahsscience.net",
+  "url": "https://www.sarahslab.net",
   "baseurl": "",
-  "repo": "https://github.com/tempertemper/tempertemper-website",
+  "repo": "https://github.com/sarah-lindner/sarahslab-website",
   "comments": false,
   "author": {
     "name": "Sarah Lindner",

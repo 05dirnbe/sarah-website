@@ -1,18 +1,18 @@
 ---
-title: About Sarah at tempertemper
+title: About Sarah
 heading: About Sarah
 intro: |
     It's very nice that you want to know more about me! I’m Sarah and I am a researcher. I'm from Salzburg but I live in Graz; I live with my partner and our son.
 layout: default
 permalink: about.html
-summaryImage: martin-underhill-tempertemper.jpg
-summaryImageAlt: Martin Underhill of tempertemper Web Design
+summaryImage: sarah-lindner.jpg
+summaryImageAlt: Sarah Lindner smiling
 ---
 
 <picture>
-    <source srcset="/assets/img/martin-underhill-tempertemper.avif" type="image/avif" />
-    <source srcset="/assets/img/martin-underhill-tempertemper.webp" type="image/webp" />
-    <img src="/assets/img/martin-underhill-tempertemper.jpg" alt="Martin Underhill of tempertemper Web Design, holding a cup of tea and looking to his left, smiling." width="800" height="450" decoding="async" />
+    <source srcset="/assets/img/sarah-lindner.avif" type="image/avif" />
+    <source srcset="/assets/img/sarah-lindner.webp" type="image/webp" />
+    <img src="/assets/img/sarah-lindner.jpg" alt="Sarah Lindner of {{site.title}} smiling." width="800" height="450" decoding="async" />
 </picture>
 
 
