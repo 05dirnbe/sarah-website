@@ -3,7 +3,7 @@ title: "Single-photon source using nitrogen vacancy centers in nanodiamonds"
 intro: "Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond!"
 type: "An article"
 featured: true
-date: 2023-01-23
+date: 2017-01-23
 collaborators:
     -   name: "Reinhard Alkofer"
         website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"

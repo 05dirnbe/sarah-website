@@ -8,7 +8,7 @@ layout: base.html
     {%- elif category %}
         {{- category | smart | safe }}
     {%- elif year %}
-        Blog posts from {{ year }}
+        From {{ year }}
     {%- else %}
         {{- title | smart | safe }}
     {%- endif %}

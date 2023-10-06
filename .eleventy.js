@@ -109,10 +109,10 @@ module.exports = eleventyConfig => {
   /* If promoted posts in frontmatter, output them first */
   eleventyConfig.addFilter("promoteRelated", (arr, related) => {
     const relatedPosts = arr.filter(item => {
-      return item.url && (related || []).includes(item.url.replace("/blog/", "").replace(".html", ""));
+      return item.url && (related || []).includes(item.url.replace("/research/", "").replace(".html", ""));
     });
     const unrelatedPosts = arr.filter(item => {
-      return item.url && !(related || []).includes(item.url.replace("/blog/", "").replace(".html", ""));
+      return item.url && !(related || []).includes(item.url.replace("/research/", "").replace(".html", ""));
     });
     return relatedPosts.concat(unrelatedPosts);
   });

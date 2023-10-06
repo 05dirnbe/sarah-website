@@ -11,12 +11,12 @@
     }
   },
   layout: "default",
-  permalink: "/blog/year/{{ year }}.html"
+  permalink: "/research/year/{{ year }}.html"
 }
 ---
 
 <ol class="hfeed index-list" reversed>
-    {% set yearList = collections.post | filterByYear(year) %}
+    {% set yearList = collections.publication | filterByYear(year) %}
     {% for post in yearList | reverse %}
         {%- include "post-in-list.html" %}
     {% endfor %}
@@ -25,10 +25,15 @@
 <h2>Other years</h2>
 <p>
     {% set currentYear = year %}
-    {%- set years = collections.post | getYears %}
+    {%- set years = collections.publication | getYears %}
     {%- for year in years | reverse %}
         {% if year !== currentYear %}
-            <a href="/blog/year/{{ year }}">{{ year }}</a>{%- if not loop.last -%}, {%- else -%}.{% endif %}
+            <a href="/research/year/{{ year }}">{{ year }}</a>
+            {%- if not loop.last -%}
+            ,
+            {%- else -%}
+            .
+            {% endif %}
         {% endif %}
     {%- endfor %}
 </p>
