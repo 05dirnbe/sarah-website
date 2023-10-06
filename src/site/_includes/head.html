@@ -115,7 +115,12 @@
     <noscript><link rel="stylesheet" href="/assets/css/non-critical.css?v={{ site.version }}" /></noscript>
     <link rel="stylesheet" media="print" href="/assets/css/print.css?v={{ site.version }}" />
     {% elif styling.tailwind %}
-
+        {% set css %}
+            {% include "src/tailwind/critical.scss" %}
+        {% endset %}
+        <style>
+            {{css | postcss | safe}}
+        </style>
     {% endif %}
 
     <script type="application/ld+json">

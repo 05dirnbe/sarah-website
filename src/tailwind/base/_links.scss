@@ -1,0 +1,19 @@
+a {
+  @include text-link;
+
+  p & {
+    padding-top: .25em;
+  }
+
+  > code {
+    padding: 0;
+    margin-right: 0;
+  }
+
+  @media (min-width: $m) {
+
+    h2 & {
+      text-decoration-thickness: .06em;
+    }
+  }
+}

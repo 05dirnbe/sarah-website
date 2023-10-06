@@ -1,0 +1,57 @@
+.footer {
+  clear: both;
+  padding-bottom: 1em;
+  margin-top: $section-spacing;
+
+  nav {
+    margin-top: 1em;
+  }
+
+  ul,
+  ol {
+    max-width: none;
+  }
+
+  &:before {
+    background-color: $colour-black;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-bottom: $section-spacing;
+    max-width: 10em;
+    @include dark-mode($background: $colour-dark-mode-white);
+  }
+
+  address {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .company-details {
+    margin-top: 0;
+  }
+
+  .org {
+    display: block;
+  }
+
+  .copyright {
+    margin-top: $section-spacing;
+  }
+
+  .utility {
+    @include remove-list-styling;
+
+    li {
+      @include inline-nav;
+    }
+  }
+}
+
+.social {
+
+  a {
+    display: inline-flex;
+    align-items: center;
+  }
+}

@@ -1,3 +1,7 @@
+const tailwindcss = require('tailwindcss');
+const postcss = require('postcss');
+const autoprefixer = require('autoprefixer');
+
 module.exports = eleventyConfig => {
   eleventyConfig.setUseGitIgnore(false);
 
@@ -132,6 +136,16 @@ module.exports = eleventyConfig => {
   // Localhost server config
   eleventyConfig.setServerOptions({
     port: 3000,
+  });
+
+  // Tailwind config
+  eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
+    postcss([tailwindcss(require('./tailwind.config.js')), autoprefixer()])
+      .process(cssCode)
+      .then(
+        (r) => done(null, r.css),
+        (e) => done(e, null)
+      );
   });
 
   return {
