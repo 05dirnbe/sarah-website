@@ -1,14 +1,5 @@
-{%- if tags.length >= 1 and tags.includes('service') %}
-    {%- set service = true %}
-{%- elif tags.length >= 1 and tags.includes('teaching') %}
-    {%- set teaching = true %}
-{%- endif %}
 <section aria-labelledby="ctaLabel" class="call-to-action">
-    {% if teaching %}
-        <h2 id="ctaLabel">Interested in writing a thesis?</h2>
-        <p>If you'd are interested in writing your thesis with me, just give me a shout and we will see what we can do.</p>
-        <a href="/contact">Contact me</a>
-    {% elif cta.custom %}
+    {% if cta.custom %}
         <h2 id="ctaLabel">{{cta.headline}}</h2>
         {{ cta.intro | markdown | safe }}
         <a href="/contact">Contact me</a>
