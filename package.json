@@ -25,7 +25,7 @@
     "watch:printcss": "onchange 'src/scss/etc/print.scss' -- npm run styles:print",
     "watch:js": "onchange 'src/js' -- npm run js",
     "watch": "run-p watch:css watch:js watch:legacycss",
-    "start": "npm run clear && npm run build:devassets && run-p serve watch",
+    "start": "npm run clear && npm run-p serve watch",
     "staging": "npm run build && echo 'User-agent: *\nDisallow: /' > dist/robots.txt",
     "bump:major": "bump major --commit 'Bumps version number to %s' src/site/_data/site.js *.json",
     "bump:minor": "bump minor --commit 'Bumps version number to %s' src/site/_data/site.js *.json",
