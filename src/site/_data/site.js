@@ -11,6 +11,7 @@ module.exports = {
     "email": "sarah.lindner@uni-graz.at",
     "linkedin": "https://at.linkedin.com/in/sarah-lindner-0a7973171",
     "card": "https://online.uni-graz.at/kfu_online/visitenkarte.show_vcard?pPersonenId=B0BB96B40B8F88C7&pPersonenGruppe=3",
+    "courses":"https://online.uni-graz.at/kfu_online/wblvangebot.wbshowlvoffer?ppersonnr=72850",
   },
   "adress": {
     "room": {

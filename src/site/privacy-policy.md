@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 intro: |
-    I value my own privacy so I'm hugely respectful of yours. Have a read through this policy to find out more.
+    I value my own privacy so I'm respectful of yours. Have a read through this policy to find out more.
 hideIntro: true
 layout: default
 permalink: privacy-policy.html
@@ -10,9 +10,6 @@ permalink: privacy-policy.html
 This privacy policy sets out how I use and protect any information that you provide when you use this website.
 
 I'm committed to ensuring that your privacy is protected. If you're asked to provide information by which you can be identified when using this website, then you can be assured that it will only be used the way I will describe in this privacy statement.
-
-The policy may change from time to time, and I'll do that by updating this page. Check back from time to time to make sure you're happy with any changes. This policy is effective from 18/10/19.
-
 
 ## What's collected
 
@@ -23,17 +20,11 @@ No information is collected without your knowing. There are no tracking cookies 
 
 ## What's done with your information
 
-Quite reasonably, if you'd like me to work with you, I'll need to know all about your project, but details of it will go no further without your express permission.
-
-If we end up collaborating, I'll use your information to keep in touch, and sometimes you might get:
-
-- The odd email about new ideas I have
-- Information that I think you'll find interesting
+Quite reasonably, if you'd like me to work with you, I'll need to know about you and your work, but details of it will go no further without your express permission.
 
 ## Security
 
-I'm committed to ensuring that your information is secure. Among other things, I use [two factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) on every service I use and all passwords are unique and [stored in a password manager](https://1password.com/).
-
+I'm committed to ensuring that your information is secure. Among other things, I use [two factor authentication](https://en.wikipedia.org/wiki/Multi-factor_authentication) on every service I use and all passwords are strong, unique and [stored in a password manager](https://1password.com/).
 
 ## Cookies
 
@@ -46,6 +37,12 @@ Not using cookies also means I don't have to annoy you with those awful pop up b
 ## Links to other websites
 
 This website contains links to other websites. I try to link to reputable sources, but be sure to check out their privacy statements as I can't accept any responsibility for your privacy once you've left this site.
+
+## Content from other websites
+
+This website embeds content from [Uni Graz Online]({{site.author.courses}}) to directly show the courses I am teaching momentarily and give prospective attendees the option to sign-up on the spot.
+
+When you interact whith the embedded content, keep in mind that the universities [privacy statement](https://www.uni-graz.at/de/datenschutzerklaerung/) applies.
 
 ## Questions
 
