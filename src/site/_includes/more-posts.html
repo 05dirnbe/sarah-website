@@ -1,25 +1,10 @@
-{%- if tags.includes('post') %}
-    {%- set blogPost = true %}
-    {%- set typeOfThing = 'posts' %}
-    {%- set linkToList = '/blog/' %}
-    {%- set items = collections.post %}
-{%- elif tags.includes('resource') %}
-    {%- set resource = true %}
-    {%- set typeOfThing = 'resources' %}
-    {%- set linkToList = '/resources/' %}
-    {%- set items = collections.resource %}
-{%- elif tags.includes('case-study') %}
-    {%- set caseStudy = true %}
-    {%- set typeOfThing = 'case studies' %}
-    {%- set linkToList = '/portfolio/' %}
-    {%- set items = collections['case-study'] %}
-{%- elif tags.includes('project') %}
-    {%- set researchProject = true %}
+{%- if tags.includes('project') %}
+    {%- set project = true %}
     {%- set typeOfThing = 'research projects' %}
     {%- set linkToList = '/research/' %}
     {%- set items = collections['project'] %}
 {%- elif tags.includes('teaching') %}
-    {%- set course = true %}
+    {%- set teaching = true %}
     {%- set typeOfThing = 'courses' %}
     {%- set linkToList = '/teaching/' %}
     {%- set items = collections['teaching'] %}
@@ -28,6 +13,21 @@
     {%- set typeOfThing = 'publications' %}
     {%- set linkToList = '/publications/' %}
     {%- set items = collections['publication'] %}
+{%- elif tags.includes('theses') %}
+    {%- set theses = true %}
+    {%- set typeOfThing = 'theses' %}
+    {%- set linkToList = '/theses/' %}
+    {%- set items = collections['theses'] %}
+{%- elif tags.includes('service') %}
+    {%- set service = true %}
+    {%- set typeOfThing = 'functions and services' %}
+    {%- set linkToList = '/service/' %}
+    {%- set items = collections['service'] %}
+{%- elif tags.includes('dissemination') %}
+    {%- set dissemination = true %}
+    {%- set typeOfThing = 'dissemination activities' %}
+    {%- set linkToList = '/dissemination/' %}
+    {%- set items = collections['dissemination'] %}
 {%- endif %}
 <section aria-labelledby="further-reading-heading" class="teaser">
     <h2 id="further-reading-heading">More {{ typeOfThing }}</h2>
