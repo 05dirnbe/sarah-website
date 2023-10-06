@@ -42,6 +42,7 @@ layout: base.html
     </ul>
 </section>
 
+{% if kfu_course_feed %}
 <section aria-labelledby="my-teaching-focus">
     <h2 id="my-teaching-focus">Current Teaching</h2>
     <p>Here's a glimps of the courses I am currently active in:</p>
@@ -57,3 +58,4 @@ layout: base.html
     </div>
     <p>Check out the source of this embedded content at <a href="{{site.author.courses}}">Uni Graz Online</a> or have a look at the <a href="/teaching">full list of my courses</a>.</p>
 </section>
+{% endif %}
