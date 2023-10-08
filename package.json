@@ -46,6 +46,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.12",
+    "daisyui": "^3.9.2",
     "dotenv": "^16.0.3",
     "eleventy-plugin-bibtex": "^0.1.1",
     "html5shiv": "^3.7.3",
