@@ -59,6 +59,9 @@ module.exports = eleventyConfig => {
     templateFormats: ["njk", "md"]
   });
 
+  // Watch tailwind definitions for changes
+  eleventyConfig.addWatchTarget("./src/tailwind/");
+
   /* RSS */
   const pluginRss = require("@11ty/eleventy-plugin-rss");
   eleventyConfig.addPlugin(pluginRss);
