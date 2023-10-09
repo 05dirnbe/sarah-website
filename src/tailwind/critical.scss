@@ -15,50 +15,47 @@
 
 @layer base {
   header {
-
-    @apply font-bold leading-6;
-    @apply flex justify-between py-2 sm:py-4 md:py-8 lg:py-10;
-
-    a {
-      @apply link link-hover hover:link-primary;
-    }
-
-    ul {
-      @apply flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 whitespace-nowrap;
-    }
+    @apply font-bold leading-6 flex flex-row justify-between py-2 sm:py-4 md:py-8 lg:py-10;
 
     .logo {
       @apply link link-primary link-hover;
     }
+  }
+
+  header a {
+    @apply link link-hover hover:link-primary;
+  }
+
+  header ul {
+    @apply flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 whitespace-nowrap;
   }
 
   footer {
     @apply font-semibold leading-6 text-sm;
     @apply flex justify-between py-10 sm:py-10 md:py-16 lg:py-20;
-
-    .social {
-      @apply inline-flex items-center;
-    }
-
-    a {
-      @apply link link-hover hover:link-primary;
-    }
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-4 sm:gap-y-6 md:gap-y-8 items-start;
 
     .logo {
-      @apply link link-primary link-hover;
-    }
-
-    ul {
-      @apply flex flex-col gap-1 whitespace-nowrap;
-    }
-
-    nav {
-      @apply pl-2 border-l border-primary;
+      @apply link link-primary link-hover col-span-full;
     }
   }
+
+  footer a {
+    @apply link link-hover hover:link-primary;
+  }
+
+  footer ul {
+    @apply flex flex-col gap-1 whitespace-nowrap;
+  }
+
+  footer nav {
+    @apply pl-2 border-l border-primary;
+  }
+
 }
+
 @layer base {
   main {
-    @apply prose prose-xl prose-a:link prose-a:link-primary;
+    @apply prose prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl prose-a:link prose-a:link-primary;
   }
 }
