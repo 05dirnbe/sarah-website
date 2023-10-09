@@ -16,9 +16,9 @@ cta:
         - Speaking at your event
 ---
 
-<ol class="index-list" reversed>
+<ul class="index-list" reversed>
     {%- for post in collections['project'] | reverse %}
         {%- include "post-in-list.html" %}
     {%- endfor %}
-</ol>
+</ul>
 
