@@ -49,6 +49,7 @@
     "daisyui": "^3.9.2",
     "dotenv": "^16.0.3",
     "eleventy-plugin-bibtex": "^0.1.1",
+    "html-minifier": "^4.0.0",
     "html5shiv": "^3.7.3",
     "markdown-it-anchor": "^8.6.5",
     "modularscale-sass": "^3.0.10",

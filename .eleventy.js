@@ -1,6 +1,7 @@
 const tailwindcss = require('tailwindcss');
 const postcss = require('postcss');
 const autoprefixer = require('autoprefixer');
+const htmlmin = require('html-minifier')
 
 module.exports = eleventyConfig => {
   eleventyConfig.setUseGitIgnore(false);
@@ -61,6 +62,7 @@ module.exports = eleventyConfig => {
 
   // Watch tailwind definitions for changes
   eleventyConfig.addWatchTarget("./src/tailwind/");
+  eleventyConfig.addWatchTarget("./tailwind.config.js");
 
   /* RSS */
   const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -150,6 +152,24 @@ module.exports = eleventyConfig => {
         (e) => done(e, null)
       );
   });
+
+  eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
+    if (
+      process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith('.html')
+    ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      })
+      return minified
+    }
+
+      return content
+  });
+
 
   return {
     dir: {
