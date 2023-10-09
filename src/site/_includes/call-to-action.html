@@ -1,7 +1,7 @@
 <section aria-labelledby="ctaLabel" class="call-to-action">
     {% if cta.custom %}
         <h2 id="ctaLabel">{{cta.headline}}</h2>
-        {{ cta.intro | markdown | safe }}
+        <p class="prose">{{ cta.intro | markdown | safe }}</p>
         <a href="/contact">Contact me</a>
     {% elif tags.includes('theses') %}
         <h2 id="ctaLabel">Interested in writing a thesis?</h2>

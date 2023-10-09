@@ -3,6 +3,62 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
-  h1 { @apply bg-sky-100 }
+  html {
+    @apply font-mono text-xl text-base-content bg-base-100 antialiased;
+  }
+  body {
+    @apply container mx-auto px-4 sm:px-4 md:px-8 lg:px-10 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl;
+  }
+}
+
+@layer base {
+  header {
+
+    @apply font-bold leading-6;
+    @apply flex justify-between py-2 sm:py-4 md:py-8 lg:py-10;
+
+    a {
+      @apply link link-hover hover:link-primary;
+    }
+
+    ul {
+      @apply flex flex-row gap-4 sm:gap-6 md:gap-8 lg:gap-10 whitespace-nowrap;
+    }
+
+    .logo {
+      @apply link link-primary link-hover;
+    }
+  }
+
+  footer {
+    @apply font-semibold leading-6 text-sm;
+    @apply flex justify-between py-10 sm:py-10 md:py-16 lg:py-20;
+
+    .social {
+      @apply inline-flex items-center;
+    }
+
+    a {
+      @apply link link-hover hover:link-primary;
+    }
+
+    .logo {
+      @apply link link-primary link-hover;
+    }
+
+    ul {
+      @apply flex flex-col gap-1 whitespace-nowrap;
+    }
+
+    nav {
+      @apply pl-2 border-l border-primary;
+    }
+  }
+}
+@layer base {
+  main {
+    @apply prose prose-xl prose-a:link prose-a:link-primary;
+  }
 }
