@@ -2,6 +2,12 @@
 layout: base.html
 ---
 
+
+
+<div class= "flex flex-row items-center">
+<picture class="p-8">
+    <img class= "w-full h-full mask mask-squircle motion-safe:hover:animate-spin object-cover" src="/assets/img/sarah-lindner--square-512x512.jpg" alt="Sarah Lindner of {{site.title}} smiling."/>
+</picture>
 <article>
     <h1>
         {%- if heading %}
@@ -17,6 +23,8 @@ layout: base.html
     {%- endif %}
     {{- content | safe }}
 </article>
+
+</div>
 
 <section aria-labelledby="my-research-focus">
     <h2 id="my-research-focus">Areas of Interest</h2>

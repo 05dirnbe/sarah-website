@@ -56,9 +56,7 @@ module.exports = eleventyConfig => {
 
   /* Code syntax highlighting */
   const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-  eleventyConfig.addPlugin(syntaxHighlight, {
-    templateFormats: ["njk", "md"]
-  });
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   // Watch tailwind definitions for changes
   eleventyConfig.addWatchTarget("./src/tailwind/");

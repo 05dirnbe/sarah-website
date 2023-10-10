@@ -16,8 +16,8 @@ cta:
 
 <p>Use <a href="{{site.author.courses}}" target="_blank">Uni Graz Online</a> to sign-up for current or upcoming courses and to check-out locations and timetables!</p>
 
-<ol class="hfeed index-list" reversed>
+<ul class="hfeed index-list" reversed>
     {%- for post in collections.teaching | reverse %}
         {%- include "post-in-list.html" %}
     {%- endfor %}
-</ol>
+</ul>

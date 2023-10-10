@@ -15,9 +15,11 @@
                 Publication
                 {% include "post-categories.html" %}
             </p>
-            <p class="details">
-                {% include "post-citation.html" %}
-            </p>
+            <!-- <p class="details"> -->
+            <!--     {% include "post-citation.html" %} -->
+            <!-- </p> -->
+            {%- set menu = post.data.menu %}
+            {% include "post-menu.html" %}
 
         {% elif post.data.tags.includes('dissemination') %}
             <p class="details">
