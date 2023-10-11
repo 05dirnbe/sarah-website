@@ -3,14 +3,14 @@
         <!-- Tabs component -->
         <div x-data="{
                         activeTab: 1,
-                        activeClass: 'btn btn-outline btn-sm btn-primary rounded-full',
-                        inactiveClass : 'btn btn-sm btn-ghost rounded-full'
+                        activeClass: 'btn-outline btn-primary',
+                        inactiveClass : 'btn-ghost'
                       }">
             <!-- Buttons -->
             <div class="flex justify-center md:justify-start">
                 <nav
                     role="tablist"
-                    class="lg:max-w-5xl space-y-4 md:space-y-0 md:space-x-2 flex flex-col md:flex-row justify-center ring-1 ring-base-content/10 bg-base-100 rounded-xl md:rounded-full p-1"
+                    class="lg:max-w-5xl md:space-y-0 md:space-x-2 flex flex-wrap md:flex-nowrap md:flex-row justify-center ring-1 ring-base-content/10 bg-base-100 rounded-xl md:rounded-full p-1"
                 >
 
                 {% for item in menu %}
@@ -20,6 +20,7 @@
                     :class="activeTab === {{loop.index}} ? activeClass : inactiveClass"
                     :aria-selected="activeTab === {{loop.index}}"
                     aria-controls="tabpanel-{{loop.index}}"
+                    class="btn rounded-full btn-xs sm:btn-sm md:btn-sm lg:btn-md"
                     >
                     {{ item.button.text }}
                     </button>
@@ -28,7 +29,7 @@
             </div>
 
             <!-- Tab panels -->
-            <div class=" mt-2 sm:mt-4 md:mt-6">
+            <div class=" mt-4 sm:mt-6 md:mt-8 lg:mt-10">
                 <div class="relative flex flex-col">
 
                     {% for item in menu %}
@@ -62,20 +63,18 @@
                                 {{ bib | bibitem('full') | safe  }}
                             {% endif %}
 
-                        {% elif item.panel.type === "syntax" %}
-                            {% if item.panel.content %}
-                                {% highlight "latex" %}
-                                {{ item.panel.content }}
-                                {% endhighlight %}
-                            {% elif post.data.bibitem %}
-                                {% highlight "latex" %}
-                                {{ post.data.bibitem }}
-                                {% endhighlight %}
-                            {% endif %}
+
+                        {% elif item.panel.accordion and post.data.bibitem %}
+
+                            {% set bib = post.data.bibitem  %}
+                            {% set accordion = item.panel.accordion  %}
+
+                            {% include "citation-accordion.html" %}
 
                         {% elif item.panel.content %}
                             {{ item.panel.content | markdown | safe }}
                         {% endif %}
+
                         </article>
                         {% endif %}
                     {% endfor %}

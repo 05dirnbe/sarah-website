@@ -1,0 +1,25 @@
+{% if accordion %}
+<div class="join join-vertical w-full text-sm">
+    {% for item in accordion %}
+        <div class="collapse collapse-arrow join-item border border-base-300 overflow-x-auto">
+            <input type="radio" name="ciation-options" {% if loop.first %}checked="checked"{% endif %}/>
+            <div class="collapse-title">
+                {{item.title}}
+            </div>
+            <div class="collapse-content text-xs">
+                {% if item.type == 'plain-text-citation' %}
+                    {{ bib | bibitem('full') | safe  }}
+                {% elif item.type == 'bibtex-citation' %}
+                    {% highlight "latex" %}
+                        {{ bib }}
+                    {% endhighlight %}
+                {% elif item.type == 'markdown' %}
+                    {% if item.content %}
+                        {{ item.content | markdown | safe }}
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endif %}

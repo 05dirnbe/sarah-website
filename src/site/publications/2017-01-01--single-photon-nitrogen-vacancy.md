@@ -4,17 +4,30 @@ intro: "Experimental realization of an absolute single-photon source based on a 
 type: "An article"
 featured: true
 date: 2017-01-23
-collaborators:
-    -   name: "Reinhard Alkofer"
-        website: "https://homepage.uni-graz.at/de/reinhard.alkofer/"
+coauthors:
+    -   name: "Christoph Becher"
+        website: "https://www.uni-saarland.de/lehrstuhl/becher.html"
+    -   name: "others"
 tags:
     - Single-photon Sources
     - Nitrogen Vacancy Centers
     - Nanodiamonds
 bibitem: |
     @article{rodiek2017experimental,
-      title={Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond},
-      author={Rodiek, Beatrice and Lopez, Marco and Hofer, Helmuth and Porrovecchio, Geiland and Smid, Marek and Chu, Xiao-Liu and Gotzinger, Stephan and Sandoghdar, Vahid and Lindner, Sarah and Becher, Christoph and others},
+      title={Experimental realization of an absolute
+      single-photon source based on a single
+      nitrogen vacancy center in a nanodiamond},
+      author={Rodiek, Beatrice
+      and Lopez, Marco
+      and Hofer, Helmuth
+      and Porrovecchio, Geiland
+      and Smid, Marek
+      and Chu, Xiao-Liu
+      and Gotzinger, Stephan
+      and Sandoghdar, Vahid
+      and Lindner, Sarah
+      and Becher, Christoph
+      and others},
       journal={Optica},
       volume={4},
       number={1},
@@ -22,37 +35,6 @@ bibitem: |
       year={2017},
       publisher={Optica Publishing Group}
     }
-menu:
-    - button:
-        text: "Title"
-      panel:
-        bibitem:
-            field: "title"
-    - button:
-        text: "Authors"
-      panel:
-        bibitem:
-            field: "author"
-    - button:
-        text: "Details"
-      panel:
-        bibitem:
-            field: "other"
-    - button:
-        text: "cite"
-      panel:
-        type: "syntax"
-        content: |
-            @article{rodiek2017experimental,
-              title={Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond},
-              author={Rodiek, Beatrice and Lopez, Marco and Hofer, Helmuth and Porrovecchio, Geiland and Smid, Marek and Chu, Xiao-Liu and Gotzinger, Stephan and Sandoghdar, Vahid and Lindner, Sarah and Becher, Christoph and others},
-              journal={Optica},
-              volume={4},
-              number={1},
-              pages={71--76},
-              year={2017},
-              publisher={Optica Publishing Group}
-            }
 ---
 
 ## Abstract

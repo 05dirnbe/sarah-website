@@ -11,13 +11,14 @@
     {% if not briefPostInList %}
 
         {% if post.data.tags.includes('publication') %}
+            {% set supress_intro = true %}
             <p class="details">
                 Publication
+                {%- set people = post.data.coauthors %}
+                {%- set praefix = 'in collaboration with' %}
+                {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
-            <!-- <p class="details"> -->
-            <!--     {% include "post-citation.html" %} -->
-            <!-- </p> -->
             {% set menu = post.data.menu %}
             {% include "post-menu.html" %}
 
@@ -90,7 +91,9 @@
         {% endif -%}
 
     {% endif %}
-    <div class="description entry-summary">
-        {{ post.data.intro  | markdown | safe }}
-    </div>
+    {% if not supress_intro %}
+        <div class="description entry-summary">
+            {{ post.data.intro  | markdown | safe }}
+        </div>
+    {% endif %}
 </li>

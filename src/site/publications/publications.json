@@ -2,5 +2,54 @@
   "layout": "publication.html",
   "hideIntro": true,
   "tags": ["publication"],
-  "permalink": "publications/{{ customURL if customURL else title | slugify | safe }}.html"
+  "permalink": "publications/{{ customURL if customURL else title | slugify | safe }}.html",
+  "menu": [
+    {
+      "button": {
+        "text": "Title"
+      },
+      "panel": {
+        "bibitem": {
+          "field": "title"
+        }
+      }
+    },
+    {
+      "button": {
+        "text": "Authors"
+      },
+      "panel": {
+        "bibitem": {
+          "field": "author"
+        }
+      }
+    },
+    {
+      "button": {
+        "text": "Details"
+      },
+      "panel": {
+        "bibitem": {
+          "field": "other"
+        }
+      }
+    },
+    {
+      "button": {
+        "text": "Cite"
+      },
+      "panel": {
+        "accordion": [
+          {
+            "type": "plain-text-citation",
+            "title": "Citation plain"
+          },
+          {
+            "type": "bibtex-citation",
+            "title": "Citation bibtex"
+          }
+        ]
+      }
+    }
+  ]
 }
