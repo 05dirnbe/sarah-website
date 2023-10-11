@@ -1,0 +1,90 @@
+{% if menu %}
+<div class="">
+        <!-- Tabs component -->
+        <div x-data="{
+                        activeTab: 1,
+                        activeClass: 'btn btn-outline btn-sm btn-primary rounded-full',
+                        inactiveClass : 'btn btn-sm btn-ghost rounded-full'
+                      }">
+            <!-- Buttons -->
+            <div class="flex justify-center md:justify-start">
+                <nav
+                    role="tablist"
+                    class="lg:max-w-5xl space-y-4 md:space-y-0 md:space-x-2 flex flex-col md:flex-row justify-center ring-1 ring-base-content/10 bg-base-100 rounded-xl md:rounded-full p-1"
+                >
+
+                {% for item in menu %}
+                    <button
+                    id="tab-{{loop.index}}"
+                    x-on:click="activeTab = {{loop.index}}"
+                    :class="activeTab === {{loop.index}} ? activeClass : inactiveClass"
+                    :aria-selected="activeTab === {{loop.index}}"
+                    aria-controls="tabpanel-{{loop.index}}"
+                    >
+                    {{ item.button.text }}
+                    </button>
+                {% endfor %}
+                </nav>
+            </div>
+
+            <!-- Tab panels -->
+            <div class=" mt-2 sm:mt-4 md:mt-6">
+                <div class="relative flex flex-col">
+
+                    {% for item in menu %}
+                        {% if item.panel %}
+                        <article
+                            id="tabpanel-{{loop.index}}"
+                            class="pl-2 md:pl-4 lg:pl-6 border-l border-primary md:flex items-stretch focus-visible:outline-none focus-visible:ring focus-visible:ring-secondary"
+                            role="tabpanel"
+                            aria-labelledby="tab-{{loop.index}}"
+                            x-show="activeTab === {{loop.index}}"
+                            x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+                            x-transition:enter-start="opacity-0 -translate-y-8"
+                            x-transition:enter-end="opacity-100 translate-y-0"
+                            x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+                            x-transition:leave-start="opacity-100 translate-y-0"
+                            x-transition:leave-end="opacity-0 translate-y-12"
+                        >
+
+                        {% if item.panel.bibitem and post.data.bibitem %}
+
+                            {% set bib = post.data.bibitem  %}
+                            {% set field = item.panel.bibitem.field  %}
+
+                            {% if field == 'title' %}
+                                {{ bib | bibitem('title') | safe  }}
+                            {% elif field == "author" %}
+                                {{ bib | bibitem('author') | safe  }}
+                            {% elif field == "other" %}
+                                {{ bib | bibitem('other') | safe  }}
+                            {% elif field == "full" %}
+                                {{ bib | bibitem('full') | safe  }}
+                            {% endif %}
+
+                        {% elif item.panel.type === "syntax" %}
+                            {% if item.panel.content %}
+                                {% highlight "latex" %}
+                                {{ item.panel.content }}
+                                {% endhighlight %}
+                            {% elif post.data.bibitem %}
+                                {% highlight "latex" %}
+                                {{ post.data.bibitem }}
+                                {% endhighlight %}
+                            {% endif %}
+
+                        {% elif item.panel.content %}
+                            {{ item.panel.content | markdown | safe }}
+                        {% endif %}
+                        </article>
+                        {% endif %}
+                    {% endfor %}
+
+                </div>
+            </div>
+
+        </div>
+        <!-- End: Tabs component -->
+
+</div>
+{% endif %}

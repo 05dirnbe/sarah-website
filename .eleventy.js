@@ -10,6 +10,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter("date", require("./lib/filters/dates.js") );
   eleventyConfig.addFilter("isoDate", require("./lib/filters/isoDate.js") );
 
+  // Bibitem filters
+  eleventyConfig.addFilter("bibitem", require("./lib/filters/bibitem.js") );
+
   /* Get development environment variable */
   require('dotenv').config()
   const { ELEVENTY_ENV } = process.env

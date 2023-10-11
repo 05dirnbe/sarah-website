@@ -26,32 +26,18 @@ menu:
     - button:
         text: "Title"
       panel:
-        type: "bibtex"
-        content: |
-            @article{rodiek2017experimental,
-              title={Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond},
-            }
+        bibitem:
+            field: "title"
     - button:
         text: "Authors"
       panel:
-        type: "bibtex"
-        content: |
-            @article{rodiek2017experimental,
-              author={Rodiek, Beatrice and Lopez, Marco and Hofer, Helmuth and Porrovecchio, Geiland and Smid, Marek and Chu, Xiao-Liu and Gotzinger, Stephan and Sandoghdar, Vahid and Lindner, Sarah and Becher, Christoph and others}
-            }
+        bibitem:
+            field: "author"
     - button:
         text: "Details"
       panel:
-        type: "bibtex"
-        content: |
-            @article{rodiek2017experimental,
-              journal={Optica},
-              volume={4},
-              number={1},
-              pages={71--76},
-              year={2017},
-              publisher={Optica Publishing Group}
-            }
+        bibitem:
+            field: "other"
     - button:
         text: "cite"
       panel:

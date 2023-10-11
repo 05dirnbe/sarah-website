@@ -18,7 +18,7 @@
             <!-- <p class="details"> -->
             <!--     {% include "post-citation.html" %} -->
             <!-- </p> -->
-            {%- set menu = post.data.menu %}
+            {% set menu = post.data.menu %}
             {% include "post-menu.html" %}
 
         {% elif post.data.tags.includes('dissemination') %}
