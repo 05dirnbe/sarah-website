@@ -1,7 +1,7 @@
 {% if accordion %}
 <div class="join join-vertical w-full text-sm">
     {% for item in accordion %}
-        <div class="collapse collapse-arrow join-item border border-base-300 overflow-x-auto">
+        <div class="collapse collapse-arrow join-item border border-base-300 overflow-x-auto" tabindex="0">
             <input type="radio" name="ciation-options" {% if loop.first %}checked="checked"{% endif %}/>
             <div class="collapse-title">
                 {{item.title}}
