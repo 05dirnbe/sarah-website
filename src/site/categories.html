@@ -11,7 +11,7 @@ permalink: /categories.html
 <p>
     {%- set categories = collections | tags %}
     {%- for category in categories %}
-        <a href="category/{{ category | lower | replace(' ', '-') }}">{{ category }}</a>
+        <a class="font-semibold" href="category/{{ category | lower | replace(' ', '-') }}">{{ category }}</a>
         {%- if not loop.last -%}
             ,
         {%- else -%}

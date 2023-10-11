@@ -6,8 +6,10 @@ layout: default
 permalink: accessibility-statement.html
 ---
 
-- It meets the [Web Content Accessibility Guidelines (WCAG) version 2.2](https://www.w3.org/TR/WCAG22) at levels A, AA and AAA.
-- All of the success criteria (A, AA, and AAA) in the older [WCAG version 2.1](https://www.w3.org/TR/WCAG21/) are satisfied
+I am not an expert in webdesign, however, I try my best to:
+
+- meet the [Web Content Accessibility Guidelines (WCAG) version 2.2](https://www.w3.org/TR/WCAG22) at levels A, AA and AAA.
+- meet the success criteria (A, AA, and AAA) in the older [WCAG version 2.1](https://www.w3.org/TR/WCAG21/) standard.
 
 While I'm not aware of any current issues with this website, there's a chance that something has been missed or broken.
 

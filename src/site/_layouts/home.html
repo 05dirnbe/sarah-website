@@ -30,8 +30,8 @@ layout: base.html
     <h2 id="my-research-focus">Areas of Interest</h2>
     <p>There are a few topics that my work centers around:</p>
     <ul>
-        <li><a href="/category/single-photon-sources">Single Photon Sources</a> is about quantum emitters emitting single photons.</li>
-        <li><a href="/category/quantum-materials">Quantum Materials</a> is about the crazy stuff that happens on small scales.</li>
+        <li><a class="font-semibold" href="/category/single-photon-sources">Single Photon Sources</a> is about quantum emitters emitting single photons.</li>
+        <li><a class="font-semibold" href="/category/quantum-materials">Quantum Materials</a> is about the crazy stuff that happens on small scales.</li>
     </ul>
      <p>Have a look at the <a href="/categories">full list of subjects</a> I care about.</p>
 </section>
@@ -40,7 +40,7 @@ layout: base.html
 <section aria-labelledby="writing" class="teaser">
     <h2 id="writing">Selected Publications</h2>
     <p>If you prefer to dive straight in rather than <a href="/publications/">see the full publication list</a>, here are a couple of my favourite publications to get you started:</p>
-    <ul class="index-list" reversed>
+    <ul class="list-none" reversed>
         {%- set publications = collections.publication | reverse %}
         {%- for post in publications %}
             {%- if post.data.featured === true %}

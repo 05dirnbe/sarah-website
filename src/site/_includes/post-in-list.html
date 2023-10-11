@@ -7,7 +7,7 @@
         {% if not post.data.permalink %}
             {{ post.data.title }}
         {% else %}
-        <a href="{{ post.url  | replace(".html", "") }}">
+        <a href="{{ post.url  | replace(".html", "") }}" class="font-bold">
             {{ post.data.title | smart | safe }}
         </a>
         {%endif%}
