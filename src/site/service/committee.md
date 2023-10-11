@@ -6,6 +6,7 @@ order: 2
 type: "Comittee Work"
 tags:
     - KFU Graz
+permalink: false
 ---
 
 I read about Perch in [Net Magazine](https://www.creativebloq.com/net-magazine) back in 2010, when searching for a WordPress alternative (me and WordPress have never seen eye to eye!). Perch has always had an easy to interpret and well organised structure and the thoughtfully designed control panel makes so much more sense to my clients.

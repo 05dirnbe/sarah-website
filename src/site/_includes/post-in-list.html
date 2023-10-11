@@ -4,9 +4,13 @@
 
 <li class="post-in-list">
     {%- if briefPostInList %}<h3>{% else %}<h2 class="entry-title">{% endif %}
-<a href="{{ post.url  | replace(".html", "") }}">
+        {% if not post.data.permalink %}
+            {{ post.data.title }}
+        {% else %}
+        <a href="{{ post.url  | replace(".html", "") }}">
             {{ post.data.title | smart | safe }}
         </a>
+        {%endif%}
     {% if briefPostInList %}</h3>{% else %}</h2>{% endif %}
     {% if not briefPostInList %}
 
@@ -19,8 +23,6 @@
                 {% include "post-collaborators.html" %}
                 {% include "post-categories.html" %}
             </p>
-            {% set menu = post.data.menu %}
-            {% include "post-menu.html" %}
 
         {% elif post.data.tags.includes('dissemination') %}
             <p class="details">
@@ -89,6 +91,10 @@
                 {% include "post-categories.html" %}
             </p>
         {% endif -%}
+
+
+        {% set menu = post.data.menu %}
+        {% include "post-menu.html" %}
 
     {% endif %}
     {% if not supress_intro %}
