@@ -58,7 +58,7 @@
 
 @layer base {
   main {
-    @apply prose prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl;
+    @apply prose max-w-none prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl;
     @apply prose-a:link prose-a:link-primary;
   }
 }
