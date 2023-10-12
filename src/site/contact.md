@@ -1,5 +1,5 @@
 ---
-title: Contact Sarah at tempertemper
+title: Contact
 heading: Say hello
 intro: |
     If you'd like to brainstorm collaborations, want me to talk at your event (expert or general public) or you're looking for someone to supervise your thesis work, say hello!

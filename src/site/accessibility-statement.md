@@ -1,5 +1,5 @@
 ---
-title: Accessibility statement
+title: Accessibility Statement
 intro: |
     I want this website to be usable by as many people as possible, regardless of device, browser, network speed, or ability.
 layout: default

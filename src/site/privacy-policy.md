@@ -1,5 +1,5 @@
 ---
-title: Privacy policy
+title: Privacy Policy
 intro: |
     I value my own privacy so I'm respectful of yours. Have a read through this policy to find out more.
 hideIntro: true

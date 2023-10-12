@@ -1,5 +1,5 @@
 ---
-title: About Sarah
+title: About
 heading: About Sarah
 intro: |
     It's very nice that you want to know more about me! I’m Sarah and I am a researcher. I'm from Salzburg but I live in Graz; I live with my partner and our son.
