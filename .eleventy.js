@@ -144,6 +144,16 @@ module.exports = eleventyConfig => {
     port: 3000,
   });
 
+  // // Tailwind config
+  // eleventyConfig.addNunjucksAsyncFilter('postcss', (cssCode, done) => {
+  //   postcss([tailwindcss(require('./tailwind.config.js')), autoprefixer()])
+  //     .process(cssCode)
+  //     .then(
+  //       (r) => done(null, r.css),
+  //       (e) => done(e, null)
+  //     );
+  // });
+
   // //Setup for html minifier
   // eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
   //   if (
