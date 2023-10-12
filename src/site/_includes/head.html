@@ -112,12 +112,8 @@
     <link rel="preload" href="/assets/fonts/FSMeWeb-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/assets/fonts/FSMeWeb-Italic.woff2" as="font" type="font/woff2" crossorigin />
 
-        {% set css %}
-            {% include "src/tailwind/critical.scss" %}
-        {% endset %}
-        <style>
-            {{css | postcss | safe}}
-        </style>
+    <!-- Include bundled styles and scripts. Tailwind is included here. -->
+    <link rel="stylesheet" href="{{ site.baseUrl }}assets/main.bundle.css">
 
     <!-- Alpine JS -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.0/dist/cdn.min.js"></script>
