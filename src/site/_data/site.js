@@ -4,7 +4,7 @@ module.exports = {
   "version": "1.0.1",
   "url": "https://www.sarahslab.net",
   "baseurl": "",
-  "repo": "https://github.com/05dirnbe/sarah-website.git",
+  "repo": "https://github.com/05dirnbe/sarah-website",
   "comments": false,
   "author": {
     "name": "Sarah Lindner",
