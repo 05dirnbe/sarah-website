@@ -1,29 +1,52 @@
-const CLEAR_SELECTION_DELAY = 2000;
 
-const isPrismClass = preTag =>
-  preTag.className.substring(0, 8) === 'language';
+async function handleCodeCopying() {
+  const copyButtonLabel = "Copy";
+  await new Promise(r => setTimeout(r, 2000));
+  // use a class selector if available
+  let blocks = document.querySelectorAll("pre");
 
-const handleCodeCopying = () => {
-  const preTags = document.getElementsByTagName('pre');
+  blocks.forEach((block) => {
 
-  if (!preTags) return;
+    //get prism class name from strings like language-x
+    let name = block.className.split('-')[1];
+    if (typeof name === 'undefined') {
+      block.className = "language-undefined";
+    };
 
-  for (const preTag of preTags)
-    if (isPrismClass(preTag))
-      preTag.innerHTML = `<div class="copy">copy</div>${preTag.innerHTML}`;
+    let div = document.createElement("div");
+    block.prepend(div);
 
-  const clipboard = new ClipboardJS('.copy', {
-    target: trigger => trigger.nextElementSibling,
+    if (typeof name !== 'undefined') {
+      let p = document.createElement("p");
+      p.innerText = name;
+      div.appendChild(p);
+    };
+
+    // only add button if browser supports Clipboard API
+    if (navigator.clipboard) {
+      let button = document.createElement("button");
+
+      button.innerText = copyButtonLabel;
+      div.appendChild(button);
+
+      button.addEventListener("click", async () => {
+        await copyCode(block, button);
+      });
+    }
   });
+};
 
-  clipboard.on('success', event => {
-    event.trigger.textContent = 'copied!';
+async function copyCode(block, button) {
+  let code = block.querySelector("code");
+  let text = code.innerText;
+  const copyButtonLabel = "Copied";
 
-    setTimeout(() => {
-      event.clearSelection();
-      event.trigger.textContent = 'copy';
-    }, CLEAR_SELECTION_DELAY);
-  });
+  await navigator.clipboard.writeText(text);
+
+  // visual feedback that task is completed
+  setTimeout(() => {
+    button.innerText = copyButtonLabel;
+  }, 700);
 };
 
 export { handleCodeCopying };

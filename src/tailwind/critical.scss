@@ -7,7 +7,6 @@
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 @layer base {
   html {
@@ -66,3 +65,31 @@
     @apply prose-a:link prose-a:link-primary;
   }
 }
+
+
+
+@tailwind utilities;
+
+// Make sure code boxes have proper line and word breaking. This prevents ugly scrollbars.
+code[class*="language-"] {
+  @apply whitespace-pre-wrap break-all;
+}
+
+pre[class*="language-"] p {
+  @apply my-0 uppercase tracking-tight;
+  /* more stuff */
+}
+
+pre[class*="language-"] div  {
+  @apply px-2 pb-1 -mt-2 mb-5 flex flex-row justify-between items-center;
+  @apply border-b;
+}
+
+pre[class*="language-undefined"] div  {
+  @apply justify-end;
+}
+
+pre[class*="language-"] button  {
+  @apply btn btn-ghost btn-xs;
+}
+
