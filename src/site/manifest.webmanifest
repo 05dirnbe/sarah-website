@@ -1,14 +1,14 @@
 {
-  "background_color": "#0097db",
-  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "display": "standalone",
   "icons": [
     {
-      "src": "/assets/img/icons/icon-192.png",
+      "src": "/assets/img/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/img/icons/icon-512.png",
+      "src": "/assets/img/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
@@ -16,6 +16,7 @@
   ],
   "lang": "en-US",
   "name": "Sarah's Lab",
+  "short_name": "Sarah's Lab",
   "start_url": "https://www.sarahslab.net",
-  "theme_color": "#0097db"
+  "theme_color": "#ffffff"
 }
