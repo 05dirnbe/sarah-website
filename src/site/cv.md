@@ -1,16 +1,14 @@
 ---
-title: Martin Underhill CV
-heading: Martin Underhill
+title: Sarah Lindner CV
+heading: Sarah Linder
 intro: |
-    Martin Underhill's CV.
+    Have a look at my professional career.
 hideIntro: true
 layout: default
 permalink: cv.html
 excludeFromSitemap: true
 ---
 
-- Email: [martin@tempertemper.net](mailto:martin@tempertemper.net)
-- Phone: [07968854087](tel:00447968854087)
 
 I'm an interaction designer, frontend developer and co-organiser of Frontend NE, a community meet-up and conference. My focus is well thought-out, inclusive, user-centred designs, and translating them to carefully crafted, accessible HTML and clean, scalable, understandable CSS.
 

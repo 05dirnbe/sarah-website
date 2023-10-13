@@ -1,10 +1,10 @@
-# Security policy for tempertemper.net (https://securitytxt.org)
+# Security policy for sarahslab.net (https://securitytxt.org)
 
 # Security contact address
-Contact: mailto:hello@tempertemper.net
+Contact: mailto:sarah.lindner@uni-graz.at
 
 # Languages spoken
-Preferred-Languages: en, es
+Preferred-Languages: en, de
 
 # Location of this file
-Canonical: https://www.tempertemper.net/.well-known/security.txt
+Canonical: https://www.sarahslab.net/.well-known/security.txt

@@ -1,7 +1,7 @@
 {
-  "name": "tempertemper",
-  "version": "6.4.10",
-  "description": "tempertemper's website",
+  "name": "sarahslab",
+  "version": "1.0.0",
+  "description": "Sarah's Lab website",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm-run-all clean -p build:*",
     "build:11ty": "eleventy --quiet",
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tempertemper/tempertemper.net"
+    "url": "https://github.com/"
   },
   "author": "Michael Dirnberger",
   "bugs": {
-    "url": "https://github.com/tempertemper/tempertemper.net/issues"
+    "url": "https://github.com//issues"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
