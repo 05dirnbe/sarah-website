@@ -14,20 +14,8 @@ tags:
     - Nanodiamonds
 bibitem: |
     @article{rodiek2017experimental,
-      title={Experimental realization of an absolute
-      single-photon source based on a single
-      nitrogen vacancy center in a nanodiamond},
-      author={Rodiek, Beatrice
-      and Lopez, Marco
-      and Hofer, Helmuth
-      and Porrovecchio, Geiland
-      and Smid, Marek
-      and Chu, Xiao-Liu
-      and Gotzinger, Stephan
-      and Sandoghdar, Vahid
-      and Lindner, Sarah
-      and Becher, Christoph
-      and others},
+      title={Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond},
+      author={Rodiek, Beatrice and Lopez, Marco and Hofer, Helmuth and Porrovecchio, Geiland and Smid, Marek and Chu, Xiao-Liu and Gotzinger, Stephan and Sandoghdar, Vahid and Lindner, Sarah and Becher, Christoph and others},
       journal={Optica},
       volume={4},
       number={1},
