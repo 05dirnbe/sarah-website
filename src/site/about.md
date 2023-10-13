@@ -12,7 +12,7 @@ summaryImageAlt: Sarah Lindner smiling
 <picture>
     <source srcset="/assets/img/sarah-lindner.avif" type="image/avif" />
     <source srcset="/assets/img/sarah-lindner.webp" type="image/webp" />
-    <img src="/assets/img/sarah-lindner.jpg" alt="Sarah Lindner of {{site.title}} smiling." width="800" height="450" decoding="async" />
+    <img src="/assets/img/sarah-lindner.jpg" alt="Sarah Lindner of {{site.title}} smiling." decoding="async" />
 </picture>
 
 
