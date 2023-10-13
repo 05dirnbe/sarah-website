@@ -1,11 +1,16 @@
 ---
-title: Designing a cohesive suite of applications
+title: PhD Research
 intro: |
-    When I redesigned EvaluAgent's suite of apps consistency of the UI was key, but there had to be a way of discerning one app from another at a glance.
-date: 2018-06-01
+    Stuff I did for my PhD
+date: 2019-06-01
+collaborators:
+    -   name: "Christoph Becher"
+        website: "https://www.uni-saarland.de/lehrstuhl/becher.html"
+    -   name: "others"
 status: 'complete'
 summaryImage: evaluagent--dashboard.png
 summaryImageAlt: An example of a product I redesigned, showing doughnut charts and key numbers for CSat, calls logged and more example 'cards'
+permalink: false
 ---
 
 When I started work at EvaluAgent in early 2017, the whole team was working full tilt on the backend rebuild of their products, a suite of applications to measure, report and encourage good quality customer services in contact centres. What they didn't have was an interface!
