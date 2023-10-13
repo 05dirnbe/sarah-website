@@ -1,10 +1,6 @@
 .DS_Store
-.sass-cache/
-*.css.map
 /node_modules/
 /dist/
 .netlify/
 .env
 tmp/
-src/site/_includes/critical.css
-src/site/_includes/scripts.js
