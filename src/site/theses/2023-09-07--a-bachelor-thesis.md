@@ -7,7 +7,7 @@ type: bachelor thesis
 tags:
     - Bachelor Thesis
     - Laser Physics
-    - Single-photon Sources
+    - Single Photon Sources
 status: 'ongoing'
 supervisors:
     -   name: "Reinhard Alkofer"

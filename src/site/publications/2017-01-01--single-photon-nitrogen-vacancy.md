@@ -1,7 +1,6 @@
 ---
-title: "Single-photon source using nitrogen vacancy centers in nanodiamonds"
+title: "Experimental realization of an absolute single-photon source based on a NiV center in a nanodiamond"
 intro: "Experimental realization of an absolute single-photon source based on a single nitrogen vacancy center in a nanodiamond!"
-type: "An article"
 featured: true
 date: 2017-01-23
 coauthors:
@@ -9,7 +8,7 @@ coauthors:
         website: "https://www.uni-saarland.de/lehrstuhl/becher.html"
     -   name: "others"
 tags:
-    - Single-photon Sources
+    - Single Photon Sources
     - Nitrogen Vacancy Centers
     - Nanodiamonds
 bibitem: |
@@ -26,7 +25,6 @@ bibitem: |
 ---
 
 ## Abstract
-
 
 We report on the experimental realization of an absolute single-photon source based on a single nitrogen vacancy (NV) center in a nanodiamond at room temperature and on the calculation of its absolute spectral photon flux from experimental data.
 
