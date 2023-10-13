@@ -144,6 +144,21 @@ module.exports = eleventyConfig => {
     port: 3000,
   });
 
+  // Minify generated html pages
+  eleventyConfig.addTransform("htmlmin", function(content) {
+    // Prior to Eleventy 2.0: use this.outputPath instead
+    if( (process.env.NODE_ENV === 'production') && this.page.outputPath && this.page.outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
+  });
+
   return {
     dir: {
       input: "src/site",
