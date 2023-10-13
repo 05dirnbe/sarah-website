@@ -102,7 +102,7 @@ module.exports = eleventyConfig => {
     });
   });
 
-  /* Get all the years that blog posts were posted */
+  /* Get all the years that blog posts were published */
   eleventyConfig.addFilter("getYears", (arr) => {
     const dates = arr.map(post => post.date.getFullYear());
     const uniqueYears = [...new Set(dates)];

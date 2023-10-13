@@ -87,7 +87,7 @@
 
         {% else %}
             <p class="details">
-                posted {{ post.data.date | date }}
+                published {{ post.data.date | date }}
                 {% include "post-categories.html" %}
             </p>
         {% endif -%}
