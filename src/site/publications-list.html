@@ -1,0 +1,27 @@
+---
+title: Publication List
+heading: Publication List
+intro: |
+    Here are my publications listed the classic way. There's a more [accessible listing](/publications) if you are interested.
+layout: default
+cta:
+    custom: true
+    headline: "Interested in my research?"
+    intro: |
+        If you are interested in my work, that's great! Let's talk about:
+
+        - Possible joined research projects
+        - Supervision of Bachelor or Master level research work
+        - Speaking at your event
+permalink: "/publications/list/index.html"
+---
+
+<ol class="flex flex-col gap-2 lg:gap-4" reversed>
+    {%- for post in collections.publication | reverse %}
+    <li class="p-4 rounded odd:bg-base-200 even:bg-base-100">
+        {% set bib = post.data.bibitem  %}
+        {{ bib | bibitem('full') | safe }}
+    </li>
+    {%- endfor %}
+</ol>
+
