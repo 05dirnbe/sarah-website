@@ -23,6 +23,6 @@ I'd love to meet you in person. If you are in Graz, find me in my [office]({{sit
 </address>
 
 <a class="inline-flex gap-x-4" href="{{ site.author.linkedin }}">
-{%- include "svg/LinkedIn.svg" -%}
+{%- include "svg/linkedin.svg" -%}
     Let's connect on LinkedIn
 </a>
