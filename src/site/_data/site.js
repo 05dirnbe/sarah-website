@@ -2,7 +2,7 @@ module.exports = {
   "title": "Sarah's Lab",
   "company": "Sarah Lindner",
   "version": "1.0.1",
-  "url": "https://www.sarahslab.net",
+  "url": "https://www.sarahslab.netlify.app",
   "baseurl": "",
   "repo": "https://github.com/05dirnbe/sarah-website",
   "comments": false,
