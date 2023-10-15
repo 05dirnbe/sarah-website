@@ -15,7 +15,7 @@
 }
 ---
 
-<ol class="hfeed index-list" reversed>
+<ol reversed>
     {% set yearList = collections.publication | filterByYear(year) %}
     {% for post in yearList | reverse %}
         {%- include "post-in-list.html" %}

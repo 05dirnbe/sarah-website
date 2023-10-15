@@ -12,14 +12,14 @@ Email me at [sarah.lindner@uni-graz.at](mailto:{{ site.author.email }}). I'll ge
 I'd love to meet you in person. If you are in Graz, find me in my [office]({{site.adress.room.url}}) or my [lab]({{site.adress.lab.url}}) on regular workdays (except Fridays). Here is my university [contact card]({{site.author.card}}) and this is my work address:
 
 <address class="bg-base-200 font-semibold p-2 md:p-4 lg:p-6 rounded-md w-fit">
-    <span class="org">{{site.author.name}}</span>
+    <span>{{site.author.name}}</span>
     <br>
-    <span class="org">{{site.adress.name}}</span>
+    <span>{{site.adress.name}}</span>
     <br>
-    <span class="street-address">{{site.adress.street}}</span>
+    <span>{{site.adress.street}}</span>
     <br>
-    <span class="locality">{{site.adress.city}}</span>
-    <span class="country-name">{{site.adress.country}}</span>
+    <span>{{site.adress.city}}</span>
+    <span>{{site.adress.country}}</span>
 </address>
 
 <a class="inline-flex gap-x-4" href="{{ site.author.linkedin }}">

@@ -8,7 +8,7 @@ noCta: true
 listing: true
 ---
 
-<ul class="index-list">
+<ul>
     {% for post in collections.service | ordered %}
         {%- include "post-in-list.html" %}
     {% endfor %}

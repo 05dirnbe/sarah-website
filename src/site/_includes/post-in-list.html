@@ -2,8 +2,8 @@
     {%- set briefPostInList = true %}
 {%- endif -%}
 
-<li class="post-in-list">
-    {%- if briefPostInList %}<h3>{% else %}<h2 class="entry-title">{% endif %}
+<li>
+    {%- if briefPostInList %}<h3>{% else %}<h2>{% endif %}
         {% if not post.data.permalink %}
             {{ post.data.title }}
         {% else %}
@@ -16,7 +16,7 @@
 
         {% if post.data.tags.includes('publication') %}
             {% set supress_intro = true %}
-            <p class="details">
+            <p>
                 Publication
                 {%- set people = post.data.coauthors %}
                 {%- set praefix = 'in collaboration with' %}
@@ -25,7 +25,7 @@
             </p>
 
         {% elif post.data.tags.includes('dissemination') %}
-            <p class="details">
+            <p>
                 {{post.data.type}}
                 {%- set people = post.data.colecturers %}
                 {%- set praefix = 'co-presented by' %}
@@ -34,7 +34,7 @@
             </p>
 
         {% elif post.data.tags.includes('teaching') %}
-            <p class="details">
+            <p>
                 {{post.data.type}}
                 {%- set people = post.data.colecturers %}
                 {%- set praefix = 'co-taught by' %}
@@ -44,7 +44,7 @@
 
 
         {% elif post.data.tags.includes('service') %}
-            <p class="details">
+            <p>
                 {{post.data.type}}
                 {%- set people = post.data.collaborators %}
                 {%- set praefix = 'serving with' %}
@@ -53,7 +53,7 @@
             </p>
 
         {% elif post.data.tags.includes('theses') %}
-            <p class="details">
+            <p>
                 {{post.data.type}}
                 {%- set people = post.data.supervisors %}
                 {%- set praefix = 'co-supervised by' %}
@@ -72,7 +72,7 @@
             </p>
 
         {% elif post.data.tags.includes('project') %}
-            <p class="details">
+            <p>
                 Research project
                 {%- set people = post.data.collaborators %}
                 {%- set praefix = 'in collaboration with' %}
@@ -86,7 +86,7 @@
             </p>
 
         {% else %}
-            <p class="details">
+            <p>
                 published {{ post.data.date | date }}
                 {% include "post-categories.html" %}
             </p>
@@ -98,8 +98,8 @@
 
     {% endif %}
     {% if not supress_intro %}
-        <div class="description entry-summary">
+        <p>
             {{ post.data.intro  | markdown | safe }}
-        </div>
+        <p>
     {% endif %}
 </li>
