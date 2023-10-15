@@ -56,7 +56,7 @@ different blinking dynamics.
 ## Sample Result
 
 <picture class="plot">
-    <img src="/assets/img/publications/strongly-inhomogeneous--distribution.png" alt="A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds." decoding="async" />
+    <img class="rounded" src="/assets/img/publications/strongly-inhomogeneous--distribution.png" alt="A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds." decoding="async" />
     <figcaption>
         Figure. A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds.
     </figcaption>
