@@ -13,7 +13,7 @@ tags:
 bibitem: |
     @phdthesis{Lindner_2018,
       title={Towards integrated single-photon sources exploiting inhomogeneous spectral properties of the silicon-vacancy center in nanodiamonds},
-      author={Lindner, Sarah Christina Barbara},
+      author={Lindner, Sarah},
       doi={http://dx.doi.org/10.22028/D291-27541},
       year={2018},
       publisher={Saarl{\"a}ndische Universit{\"a}ts-und Landesbibliothek}
