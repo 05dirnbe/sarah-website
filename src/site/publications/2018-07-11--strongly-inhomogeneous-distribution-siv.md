@@ -28,7 +28,7 @@ menu:
         panel:
             content: |
                 -   [Fulltext](https://iopscience.iop.org/article/10.1088/1367-2630/aae93f/pdf)
-summaryImage: strongly-inhomogeneous--distribution.png
+summaryImage: publications/strongly-inhomogeneous--distribution.png
 summaryImageAlt: A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds.
 ---
 
