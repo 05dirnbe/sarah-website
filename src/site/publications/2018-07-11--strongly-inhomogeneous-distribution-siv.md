@@ -28,6 +28,8 @@ menu:
         panel:
             content: |
                 -   [Fulltext](https://iopscience.iop.org/article/10.1088/1367-2630/aae93f/pdf)
+summaryImage: strongly-inhomogeneous--distribution.png
+summaryImageAlt: A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds.
 ---
 
 ## Abstract
@@ -51,3 +53,11 @@ emission is demonstrated for defect centers of both clusters, we show that emitt
 clusters show different spectroscopic features such as variations of the phonon sideband spectra and
 different blinking dynamics.
 
+## Sample Result
+
+<picture class="plot">
+    <img src="/assets/img/publications/strongly-inhomogeneous--distribution.png" alt="A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds." decoding="async" />
+    <figcaption>
+        Figure. A plot depicting a comparison of linewidth distributions versus ZPL center wavelengths of SiV centers in milled nanodiamonds.
+    </figcaption>
+</picture>

@@ -63,11 +63,19 @@
 
 @layer base {
   main {
-    @apply prose max-w-none prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl;
+    @apply prose prose-zinc max-w-none prose-sm md:prose-base lg:prose-lg xl:prose-xl 2xl:prose-2xl;
     @apply prose-a:link prose-a:link-primary;
   }
 }
 
+
+@layer base {
+  article {
+    .plot {
+      @apply max-w-3xl;
+    }
+  }
+}
 
 
 @tailwind utilities;

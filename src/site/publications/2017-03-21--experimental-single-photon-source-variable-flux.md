@@ -1,7 +1,6 @@
 ---
 title: "Experimental demonstration of a predictable single photon source with variable photon flux"
 intro: "Experimental demonstration of a predictable single photon source with variable photon flux"
-featured: true
 date: 2017-03-21
 coauthors:
     -   name: "Christoph Becher"

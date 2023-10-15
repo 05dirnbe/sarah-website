@@ -6,13 +6,14 @@ intro: |
 layout: default
 permalink: about.html
 summaryImage: sarah-lindner.jpg
-summaryImageAlt: Sarah Lindner smiling
+summaryImageAlt: Sarah Lindner smiling and making a selfie of herself. In the background you see the famous art-deco-style buildings of Miami Beach, Florida.
 ---
 
 <picture>
     <source srcset="/assets/img/sarah-lindner.avif" type="image/avif" />
     <source srcset="/assets/img/sarah-lindner.webp" type="image/webp" />
-    <img src="/assets/img/sarah-lindner.jpg" alt="Sarah Lindner of {{site.title}} smiling." decoding="async" />
+    <img class="rounded" src="/assets/img/sarah-lindner.jpg" alt="Sarah Lindner of {{site.title}} smiling and making a selfi of herself. In the background you see the famous art-deco-style buildings of Miami Beach, Florida." decoding="async" />
+    <figcaption>Me in front of some famous <a href="https://en.wikipedia.org/wiki/Art_Deco">Art-Deco</a> Buildings on <a href="https://en.wikipedia.org/wiki/Ocean_Drive_(South_Beach)https://en.wikipedia.org/wiki/Ocean_Drive_(South_Beach)">Ocean Drive</a> in Miami Beach, FL.</figcaption>
 </picture>
 
 
