@@ -26,3 +26,5 @@ I'd love to meet you in person. If you are in Graz, find me in my [office]({{sit
 {%- include "svg/linkedin.svg" -%}
     Let's connect on LinkedIn
 </a>
+
+

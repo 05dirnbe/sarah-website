@@ -1,16 +1,21 @@
-    <footer>
-        {%- include "logo.html" -%}
-        <nav aria-label="repeated primary">
-            {% include "navigation-primary.html" %}
-        </nav>
-        <nav aria-label="secondary">
-            {% include "navigation-secondary.html" %}
-        </nav>
-        <nav aria-label="utilities">
-            <ul>
-                <li><a href="/privacy-policy">Privacy</a></li>
-                <li><a href="/accessibility-statement">Accessibility</a></li>
-                <li><a href="{{site.repo}}/blob/main/{{ page.inputPath }}">Edit this page</a></li>
-            </ul>
-        </nav>
+    <footer class="flex flex-col gap-10 m-6 sm:m-8 md:m-10 lg:m-12 xl:m-14">
+        <div class="flex flex-col justify-items-start sm:flex-row sm:justify-between sm:items-baseline gap-6">
+            {%- include "logo.html" -%}
+            <div id="wcb" class="carbonbadge wcb-d flex flex-row whitespace-nowrap self-center"></div>
+        </div>
+        <div class="flex flex-col sm:flex-row justify-evenly items-start gap-4">
+            <nav aria-label="repeated primary">
+                {% include "navigation-primary.html" %}
+            </nav>
+            <nav aria-label="secondary">
+                {% include "navigation-secondary.html" %}
+            </nav>
+            <nav aria-label="utilities">
+                <ul>
+                    <li><a href="/privacy-policy">Privacy</a></li>
+                    <li><a href="/accessibility-statement">Accessibility</a></li>
+                    <li><a href="{{site.repo}}/blob/main/{{ page.inputPath }}">Edit this page</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
