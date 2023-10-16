@@ -29,20 +29,27 @@ async function handleCarbonBadge() {
           .catch(function (e) {
 
               // wcID('wcb_g').innerHTML = 'Unavailable';
+        //
+              console.log("Live carbon footprint not available for url: ", window.location.href)
               let page = "https://sarahslab.netlify.app/"
-              fetch('https://api.websitecarbon.com/b?url=' + page)
-              .then(function (r){
-                console.log("Live carbon footprint not available for url: ", window.location.href)
-                console.log("Falling back to landingpage: ", page)
-                renderResult(r)
-              })
-              .catch(function(e){
-                console.log("Live carbon footprint not available for url: ", window.location.href)
-                console.log("Falling back to stored values for: ", page)
-                let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
-                renderResult(default_values);
-              });
 
+              let cachedResponse = localStorage.getItem('wcb_' + page)
+              if (cachedResponse) {
+                console.log("Falling back to cached values for: ", page)
+                const r = JSON.parse(cachedResponse)
+                renderResult(r)
+              } else {
+                fetch('https://api.websitecarbon.com/b?url=' + page)
+                .then(function (r){
+                  console.log("Requesting carbon footprint for landingpage: ", page)
+                  renderResult(r)
+                })
+                .catch(function(e){
+                  console.log("Falling back to stored values for: ", page)
+                  let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
+                  renderResult(default_values);
+                });
+              }
 
               // console.log("Live carbon footprint not available for url: ", window.location.href);
               // console.log("Displaying static values from landing page instead.");
