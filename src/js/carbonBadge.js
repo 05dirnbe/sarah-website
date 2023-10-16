@@ -6,7 +6,6 @@ async function handleCarbonBadge() {
 
   const newRequest = function (render = true) {
 
-      console.log("Request page: ", wcU);
       // Run the API request because there is no cached result available
       fetch('https://api.websitecarbon.com/b?url=' + wcU)
           .then(function (r) {
@@ -32,6 +31,7 @@ async function handleCarbonBadge() {
 
               let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
               renderResult(default_values);
+              console.log("Live carbon footprint not available. Using default values.");
 
               (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
@@ -60,9 +60,9 @@ async function handleCarbonBadge() {
           renderResult(r)
 
           // If time since response was cached is over a day, then make a new request and update the cached result in the background
-          if ((t - r.t) > (86400000)) {
+          // if ((t - r.t) > (86400000)) {
               newRequest(false)
-          }
+          // }
 
       // If no cached response, then fetch from API
       } else {
