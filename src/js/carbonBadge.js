@@ -43,7 +43,7 @@ async function handleCarbonBadge() {
   if (('fetch' in window)) { // If the fetch API is not available, don't do anything.
 
       // Add the badge markup
-      wcB.insertAdjacentHTML('beforeEnd', '<div id="wcb_p"><span id="wcb_g">Measuring CO<sub>2</sub>&hellip;</span><a id="wcb_a" target="_blank" rel="noopener" href="https://websitecarbon.com">Website Carbon</a></div><span id="wcb_2">&nbsp;</span>');
+      wcB.insertAdjacentHTML('beforeEnd', '<div id="wcb_p"><span id="wcb_g">Measuring CO<sub>2</sub>&hellip;</span><a id="wcb_a" target="_blank" rel="noopener" href="https://websitecarbon.com">Website Carbon</a></div><div id="wcb_2"></div>');
 
       // Get result if it's saved
       let cachedResponse = localStorage.getItem('wcb_' + wcU)

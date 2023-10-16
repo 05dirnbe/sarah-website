@@ -102,35 +102,24 @@ pre[class*="language-"] button  {
 }
 
 
-#wcb.carbonbadge {
-    --b1: hsl(var(--p));
-    --b2: hsl(var(--s));
-    text-align: center;
-    color: var(--b1);
-}
+#wcb.carbonbadge{
+  @apply flex whitespace-nowrap items-center;
+  @apply prose-sm text-secondary-content;
 
-#wcb.carbonbadge sub {
-    vertical-align: middle;
-    position: relative;
-    top: .3em;
-    font-size: .7em;
-}
+  #wcb_p {
+    @apply border border-secondary bg-base-100 rounded;
+    @apply flex flex-row gap-x-4 items-start justify-self-center;
+  }
 
-#wcb #wcb_g,
-#wcb #wcb_a,
-#wcb #wcb_2 {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+  #wcb_a {
+    @apply bg-secondary text-secondary-content px-1;
+  }
 
-#wcb #wcb_g,
-#wcb #wcb_a {
-}
+  #wcb_g {
+    @apply text-base-content px-1;
+  }
 
-#wcb #wcb_g {
-}
-
-#wcb #wcb_a {
+  #wcb_2 {
+    @apply prose-sm text-base-content;
+  }
 }
