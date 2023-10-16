@@ -1,7 +1,6 @@
 
 async function handleCodeCopying() {
   const copyButtonLabel = "Copy";
-  await new Promise(r => setTimeout(r, 2000));
   // use a class selector if available
   let blocks = document.querySelectorAll("pre");
 
@@ -49,4 +48,4 @@ async function copyCode(block, button) {
   }, 700);
 };
 
-export { handleCodeCopying };
+handleCodeCopying();

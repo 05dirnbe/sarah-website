@@ -20,6 +20,7 @@ module.exports = eleventyConfig => {
   /* Files and js */
   eleventyConfig.addPassthroughCopy({ "src/img": "assets/img" });
   eleventyConfig.addPassthroughCopy({ "src/js/carbonBadge.js": "assets/js/carbonBadge.js" });
+  eleventyConfig.addPassthroughCopy({ "src/js/copyButton.js": "assets/js/copyButton.js" });
 
   /* Smart quotes filter */
   const smartypants = require("smartypants");
