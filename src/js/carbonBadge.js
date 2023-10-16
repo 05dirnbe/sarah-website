@@ -1,5 +1,4 @@
 // This code is adapted from https://gitlab.com/wholegrain/website-carbon-badges
-
 async function handleCarbonBadge() {
 
   const wcID = (selector) => document.getElementById(selector);
@@ -34,7 +33,7 @@ async function handleCarbonBadge() {
   }
 
   const renderResult = function (r) {
-      wcID('wcb_g').innerHTML = r.c + ' g CO<sub>2</sub>e/view'
+      wcID('wcb_g').innerHTML = r.c + 'g CO<sub>2</sub>e/view'
       wcID('wcb_2').insertAdjacentHTML('beforeEnd', 'Cleaner than ' + r.p + '% of pages tested')
   }
 
@@ -67,4 +66,3 @@ async function handleCarbonBadge() {
 };
 
 handleCarbonBadge();
-
