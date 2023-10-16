@@ -27,13 +27,15 @@ async function handleCarbonBadge() {
 
           // Handle error responses
           .catch(function (e) {
+
               // wcID('wcb_g').innerHTML = 'Unavailable';
 
               let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
               renderResult(default_values);
-              console.log("Live carbon footprint not available. Using default values.");
+              console.log("Live carbon footprint not available for url: ",wcU );
+              console.log("Displaying static values from landing page.");
 
-              (console.error || console.log).call(console, e.stack || e);
+              // (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
           })
   }
