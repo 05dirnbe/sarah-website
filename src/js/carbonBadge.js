@@ -54,7 +54,7 @@ async function handleCarbonBadge() {
                 })
                 .catch(function(e){
                   // In case of failure, we display historic default values.
-                  let default_values = {"c": 0.08,"p": 92};
+                  let default_values = {"c": 0.07,"p": 93};
                   console.log("Request failed. Falling back to stored footprint: ", default_values)
                   renderResult(default_values);
                 });
@@ -87,9 +87,9 @@ async function handleCarbonBadge() {
           renderResult(r)
 
           // If time since response was cached is over a day, then make a new request and update the cached result in the background
-          // if ((t - r.t) > (86400000)) {
+          if ((t - r.t) > (86400000)) {
               newRequest(false)
-          // }
+          }
 
       // If no cached response, then fetch from API
       } else {
