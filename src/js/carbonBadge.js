@@ -4,6 +4,8 @@ async function handleCarbonBadge() {
   const wcID = (selector) => document.getElementById(selector);
   const wcU = encodeURIComponent(window.location.href);
 
+  console.log('wcU', wcU);
+
   const newRequest = function (render = true) {
       // Run the API request because there is no cached result available
       fetch('https://api.websitecarbon.com/b?url=' + wcU)
