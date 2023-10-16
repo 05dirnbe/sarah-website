@@ -26,7 +26,7 @@ async function handleCarbonBadge() {
 
           // Handle error responses
           .catch(function (e) {
-              wcID('wcb_g').innerHTML = 'No Result';
+              wcID('wcb_g').innerHTML = 'Unavailable';
               (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
           })

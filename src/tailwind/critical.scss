@@ -105,19 +105,19 @@ pre[class*="language-"] button  {
 
 #wcb.carbonbadge {
 
-  @apply flex flex-col items-start sm:items-center;
+  @apply flex flex-col items-center;
 
   #wcb_p {
-    @apply ring-1 ring-inset ring-secondary bg-base-100 rounded;
+    @apply ring-1 ring-inset ring-primary bg-base-100 rounded;
     @apply flex flex-row items-start justify-self-center;
   }
 
   #wcb_a {
-    @apply bg-secondary rounded link link-hover text-base-100 px-1 md:px-6;
+    @apply bg-primary rounded link link-hover text-base-100 px-1 md:px-6;
   }
 
   #wcb_g {
-    @apply text-base-content px-2 md:px-4;
+    @apply text-primary px-2 md:px-4;
   }
 
   #wcb_2 {
