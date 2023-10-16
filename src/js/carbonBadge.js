@@ -34,7 +34,7 @@ async function handleCarbonBadge() {
   }
 
   const renderResult = function (r) {
-      wcID('wcb_g').innerHTML = r.c + 'g of CO<sub>2</sub>/view'
+      wcID('wcb_g').innerHTML = r.c + ' g CO<sub>2</sub>e/view'
       wcID('wcb_2').insertAdjacentHTML('beforeEnd', 'Cleaner than ' + r.p + '% of pages tested')
   }
 

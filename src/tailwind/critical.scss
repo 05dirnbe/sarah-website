@@ -39,6 +39,7 @@
 
   footer {
     @apply font-semibold leading-6 text-sm;
+    @apply flex flex-col gap-4 sm:gap-4 md:gap-6 lg:gap-10 my-8 sm:my-8 md:my-10 lg:my-12 xl:my-14;
 
     .logo {
       @apply link link-primary link-hover;
@@ -102,24 +103,24 @@ pre[class*="language-"] button  {
 }
 
 
-#wcb.carbonbadge{
-  @apply flex whitespace-nowrap items-center;
-  @apply prose-sm text-secondary-content;
+#wcb.carbonbadge {
+
+  @apply flex flex-col items-start sm:items-center;
 
   #wcb_p {
     @apply border border-secondary bg-base-100 rounded;
-    @apply flex flex-row gap-x-4 items-start justify-self-center;
+    @apply flex flex-row items-start justify-self-center;
   }
 
   #wcb_a {
-    @apply bg-secondary text-secondary-content px-1;
+    @apply bg-secondary link link-hover text-secondary-content px-1 md:px-6;
   }
 
   #wcb_g {
-    @apply text-base-content px-1;
+    @apply text-base-content px-2 md:px-4;
   }
 
   #wcb_2 {
-    @apply prose-sm text-base-content;
+    @apply text-xs text-secondary px-2 md:px-4 mt-2 md:mt-4;
   }
 }

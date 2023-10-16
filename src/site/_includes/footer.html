@@ -1,11 +1,6 @@
-    <footer class="flex flex-col gap-10 m-6 sm:m-8 md:m-10 lg:m-12 xl:m-14">
-        <div class="flex flex-col justify-items-start sm:flex-row sm:justify-between sm:items-baseline gap-6">
-            {%- include "logo.html" -%}
-            <!-- Carbon Tracker -->
-            <div id="wcb" class="carbonbadge wcb" style=""></div>
-            <script src="/assets/js/carbonBadge.js" defer></script>
-        </div>
-        <div class="flex flex-col sm:flex-row justify-evenly items-start gap-4">
+    <footer>
+        {%- include "logo.html" -%}
+        <div class="flex flex-col sm:flex-row justify-around items-start gap-4">
             <nav aria-label="repeated primary">
                 {% include "navigation-primary.html" %}
             </nav>
@@ -20,4 +15,8 @@
                 </ul>
             </nav>
         </div>
+
+        <!-- Carbon Tracker -->
+        <div id="wcb" class="carbonbadge wcb"></div>
+        <script src="/assets/js/carbonBadge.js" defer></script>
     </footer>
