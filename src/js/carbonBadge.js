@@ -40,9 +40,9 @@ async function handleCarbonBadge() {
                 const r = JSON.parse(cachedResponse)
                 renderResult(r)
               } else {
-                fetch('https://api.websitecarbon.com/b?url=' + page)
+                fetch('https://api.websitecarbon.com/b?url=' + "false")
                 .then(function (r){
-                  console.log("Requesting carbon footprint for landingpage: ", false)
+                  console.log("Requesting carbon footprint for landingpage: ", url)
                   renderResult(r)
                 })
                 .catch(function(e){
