@@ -31,11 +31,12 @@ async function handleCarbonBadge() {
               // wcID('wcb_g').innerHTML = 'Unavailable';
         //
               console.log("Live carbon footprint not available for url: ", window.location.href)
-              let page = encodeURIComponent("https://sarahslab.netlify.app/")
+              let url = "https://sarahslab.netlify.app/"
+              let page = encodeURIComponent(url)
               let cachedResponse = localStorage.getItem('wcb_' + page)
               console.log("cache: ", JSON.parse(cachedResponse) )
               if (cachedResponse) {
-                console.log("Falling back to cached values for: ", page)
+                console.log("Falling back to cached values for: ", url)
                 const r = JSON.parse(cachedResponse)
                 renderResult(r)
               } else {
