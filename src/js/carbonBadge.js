@@ -29,7 +29,7 @@ async function handleCarbonBadge() {
           .catch(function (e) {
 
               // wcID('wcb_g').innerHTML = 'Unavailable';
-              let page = "https://sarahslab.netlify.app"
+              let page = "https://sarahslab.netlify.app/"
               fetch('https://api.websitecarbon.com/b?url=' + page)
               .then(function (r){
                 console.log("Live carbon footprint not available for url: ", window.location.href)
