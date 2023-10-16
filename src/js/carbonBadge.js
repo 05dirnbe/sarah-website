@@ -5,10 +5,13 @@ async function handleCarbonBadge() {
   const wcU = encodeURIComponent(window.location.href);
 
   const newRequest = function (render = true) {
+
+      console.log("Request page: ", wcU);
       // Run the API request because there is no cached result available
       fetch('https://api.websitecarbon.com/b?url=' + wcU)
           .then(function (r) {
               if (!r.ok) {
+                  console.log("error: ", r);
                   throw Error(r);
               }
               return r.json();
