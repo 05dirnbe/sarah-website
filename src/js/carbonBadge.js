@@ -43,6 +43,9 @@ async function handleCarbonBadge() {
                 fetch('https://api.websitecarbon.com/b?url=' + wcU)
                 .then(function (r){
                   console.log("Requesting carbon footprint for landingpage: ", url)
+                  if (!r.ok) {
+                    throw Error(r);
+                  }
                   renderResult(r)
                 })
                 .catch(function(e){
