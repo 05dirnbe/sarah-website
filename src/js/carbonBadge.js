@@ -32,7 +32,7 @@ async function handleCarbonBadge() {
 
               // Fetching the carbon footprint values for the current page failed, so we want to display the carbon footprint score for the landing page
               console.log("Live carbon footprint not available for url: ", window.location.href)
-              let url = "https://sarahslab.netlify.app/"
+              let url = window.location.origin
               let page = encodeURIComponent(url)
               let cachedResponse = localStorage.getItem('wcb_' + page)
 
