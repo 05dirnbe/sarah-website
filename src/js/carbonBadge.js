@@ -28,35 +28,37 @@ async function handleCarbonBadge() {
           // Handle error responses
           .catch(function (e) {
 
-              // wcID('wcb_g').innerHTML = 'Unavailable';
-        //
+              wcID('wcb_g').innerHTML = 'Unavailable';
+
+              // Fetching the carbon footprint values for the current page failed, so we want to display the carbon footprint score for the landing page
               console.log("Live carbon footprint not available for url: ", window.location.href)
               let url = "https://sarahslab.netlify.app/"
               let page = encodeURIComponent(url)
-              let cachedResponse = localStorage.getItem('wcb_' + wcU)
-              cachedResponse = false
+              let cachedResponse = localStorage.getItem('wcb_' + page)
+
+              // If we have the values cached, load them from cache
               if (cachedResponse) {
                 console.log("Falling back to cached values for: ", url)
                 const r = JSON.parse(cachedResponse)
                 renderResult(r)
               } else {
-                fetch('https://api.websitecarbon.com/b?url=' + wcU)
+              // If there is no chache, we try another fetch, this time for the landing page
+                fetch('https://api.websitecarbon.com/b?url=' + page)
                 .then(function (r){
-                  console.log("Requesting carbon footprint for landingpage: ", url)
+                  // In case of success, we display the fresh values
+                  console.log("Requesting fresh carbon footprint for landingpage: ", url)
                   if (!r.ok) {
                     throw Error(r);
                   }
                   renderResult(r)
                 })
                 .catch(function(e){
-                  console.log("Falling back to stored values for: ", url)
+                  // In case of failure, we display historic default values.
                   let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
+                  console.log("Request failed. Falling back to stored footprint: ", default_values)
                   renderResult(default_values);
                 });
               }
-
-              // console.log("Live carbon footprint not available for url: ", window.location.href);
-              // console.log("Displaying static values from landing page instead.");
 
               (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
