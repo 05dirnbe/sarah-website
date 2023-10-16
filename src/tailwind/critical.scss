@@ -101,3 +101,36 @@ pre[class*="language-"] button  {
   @apply btn btn-ghost btn-xs;
 }
 
+
+#wcb.carbonbadge {
+    --b1: hsl(var(--p));
+    --b2: hsl(var(--s));
+    text-align: center;
+    color: var(--b1);
+}
+
+#wcb.carbonbadge sub {
+    vertical-align: middle;
+    position: relative;
+    top: .3em;
+    font-size: .7em;
+}
+
+#wcb #wcb_g,
+#wcb #wcb_a,
+#wcb #wcb_2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#wcb #wcb_g,
+#wcb #wcb_a {
+}
+
+#wcb #wcb_g {
+}
+
+#wcb #wcb_a {
+}
