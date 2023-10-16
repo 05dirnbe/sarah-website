@@ -29,13 +29,25 @@ async function handleCarbonBadge() {
           .catch(function (e) {
 
               // wcID('wcb_g').innerHTML = 'Unavailable';
+              let page = "https://sarahslab.netlify.app"
+              fetch('https://api.websitecarbon.com/b?url=' + page)
+              .then(function (r){
+                console.log("Live carbon footprint not available for url: ", window.location.href)
+                console.log("Falling back to landingpage: ", page)
+                renderResult(r)
+              })
+              .catch(function(e){
+                console.log("Live carbon footprint not available for url: ", window.location.href)
+                console.log("Falling back to stored values for: ", page)
+                let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
+                renderResult(default_values);
+              });
 
-              let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
-              renderResult(default_values);
-              console.log("Live carbon footprint not available for url: ", window.location.href);
-              console.log("Displaying static values from landing page instead.");
 
-              // (console.error || console.log).call(console, e.stack || e);
+              // console.log("Live carbon footprint not available for url: ", window.location.href);
+              // console.log("Displaying static values from landing page instead.");
+
+              (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
           })
   }
