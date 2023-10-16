@@ -42,11 +42,11 @@ async function handleCarbonBadge() {
               } else {
                 fetch('https://api.websitecarbon.com/b?url=' + page)
                 .then(function (r){
-                  console.log("Requesting carbon footprint for landingpage: ", page)
+                  console.log("Requesting carbon footprint for landingpage: ", false)
                   renderResult(r)
                 })
                 .catch(function(e){
-                  console.log("Falling back to stored values for: ", page)
+                  console.log("Falling back to stored values for: ", url)
                   let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
                   renderResult(default_values);
                 });
