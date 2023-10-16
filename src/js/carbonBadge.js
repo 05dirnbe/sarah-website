@@ -8,7 +8,7 @@ async function handleCarbonBadge() {
 
       console.log("Request page: ", wcU);
       // Run the API request because there is no cached result available
-      fetch('https://api.websitecarbon.com/site?url=' + wcU)
+      fetch('https://api.websitecarbon.com/b?url=' + wcU)
           .then(function (r) {
               if (!r.ok) {
                   console.log("error: ", r);
@@ -36,8 +36,8 @@ async function handleCarbonBadge() {
   }
 
   const renderResult = function (r) {
-      // wcID('wcb_g').innerHTML = r.c + 'g CO<sub>2</sub>e/view'
-      wcID('wcb_2').insertAdjacentHTML('beforeEnd', 'Cleaner than ' + r.cleanerThan + '% of pages tested')
+      wcID('wcb_g').innerHTML = r.c + 'g CO<sub>2</sub>e/view'
+      wcID('wcb_2').insertAdjacentHTML('beforeEnd', 'Cleaner than ' + r.p + '% of pages tested')
   }
 
   const wcB = wcID('wcb');
