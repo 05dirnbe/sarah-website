@@ -33,6 +33,7 @@ async function handleCarbonBadge() {
               console.log("Live carbon footprint not available for url: ", window.location.href)
               let page = encodeURIComponent("https://sarahslab.netlify.app/")
               let cachedResponse = localStorage.getItem('wcb_' + page)
+              console.log("cache: ", JSON.parse(cachedResponse) )
               if (cachedResponse) {
                 console.log("Falling back to cached values for: ", page)
                 const r = JSON.parse(cachedResponse)
