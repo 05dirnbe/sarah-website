@@ -34,7 +34,7 @@ async function handleCarbonBadge() {
               let url = "https://sarahslab.netlify.app/"
               let page = encodeURIComponent(url)
               let cachedResponse = localStorage.getItem('wcb_' + page)
-              console.log("cache: ", JSON.parse(cachedResponse) )
+              cachedResponse = false
               if (cachedResponse) {
                 console.log("Falling back to cached values for: ", url)
                 const r = JSON.parse(cachedResponse)
