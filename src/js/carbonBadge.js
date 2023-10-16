@@ -32,8 +32,8 @@ async function handleCarbonBadge() {
 
               let default_values = {"c": 0.08,"p": 92, "url": "https://sarahslab.netlify.app"};
               renderResult(default_values);
-              console.log("Live carbon footprint not available for url: ",wcU );
-              console.log("Displaying static values from landing page.");
+              console.log("Live carbon footprint not available for url: ", window.location.href);
+              console.log("Displaying static values from landing page instead.");
 
               // (console.error || console.log).call(console, e.stack || e);
               localStorage.removeItem('wcb_'+wcU)
